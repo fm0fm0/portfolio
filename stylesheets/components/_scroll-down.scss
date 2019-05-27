@@ -1,0 +1,33 @@
+.scroll-down{
+    width: 32px;
+    height: 32px;
+    border: 2px solid $info;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s 2s infinite;
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        40%{
+            transform: translateY(-10px);
+        }
+        60%{
+            transform: translateY(-5px);
+        }
+    }
+    &::before{
+        content: '';
+        width: 12px;
+        height: 12px;
+        border: 2px solid $info;
+        border-width: 0 0 2px 2px;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 6px);
+    }
+}

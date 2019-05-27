@@ -1,0 +1,40 @@
+//skills
+@mixin icon ($x-position, $y-position){
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon-sprites.svg) no-repeat $x-position $y-position;
+    overflow: hidden;
+}
+.icon-ps{
+    @include icon(0, 0);
+}
+.icon-ai{
+    @include icon(-60px, 0);
+}
+.icon-html{
+    @include icon(-120px, 0);
+}
+.icon-css{
+    @include icon(-180px, 0);
+}
+.icon-jq{
+    @include icon(-240px, 0);
+}
+.icon-scss{
+    @include icon(0, -60px);
+}
+.icon-bootstrap{
+    @include icon(-60px, -60px);
+}
+.icon-sublime{
+    @include icon(-120px, -60px);
+}
+.icon-vscode{
+    @include icon(-180px, -60px);
+}
+.icon-dw{
+    @include icon(-240px, -60px);
+}
+.icon-id{
+    @include icon(0px, -120px);
+}

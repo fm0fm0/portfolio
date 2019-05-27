@@ -1,0 +1,74 @@
+//全域共用
+.title-font{
+    font-family: 'Dancing Script', cursive;
+}
+.subtitle-underline{
+    border-bottom: 2px solid $primary; 
+}
+.h7{
+    font-size: 14px;
+}
+//navbar
+.navbar{
+    box-shadow: 0 3px 5px -1px rgba(#000000, .2); 
+}
+//intro
+.intro{
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.bg-img{
+    background-image: url(../images/bg-banner.svg);
+    background-position: 0 0;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-color: #ffe1e4;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    transform: translate3d(0,0,0);
+    animation: sprint 210s linear 0s infinite;
+    @keyframes sprint {
+        100%{
+            transform: translate3d(-50%,0,0);
+        }
+    }
+}
+.bg-white-translucent{
+    background-color: rgba(255,255,255, .8);
+}
+.headshot{
+    width: 160px;
+    box-shadow: 1px 1px 10px rgba(0,0,0, .2);
+}
+//experience
+.experience{
+    max-width: 800px;
+    overflow: hidden;
+}
+.timeline-wrap{
+    position: relative;
+    .timeline{
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        border-left: 1px solid $primary;
+        height: 105%;
+        i{
+            position: absolute;
+            left: -9px;
+            background: #fff;
+            color: $primary;
+        }
+    }
+}
+//Self-enrichment
+.bg-sign-light{
+    background-color: #ffe1e4;
+}
+

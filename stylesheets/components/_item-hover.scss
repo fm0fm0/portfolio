@@ -1,0 +1,11 @@
+.item-hover{
+    img{
+        box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: .1);
+    }
+    &:hover{
+        img{
+            box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: .3);
+            transition: .6s ease;
+        }
+    }
+}
