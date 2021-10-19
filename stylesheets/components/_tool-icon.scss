@@ -38,3 +38,9 @@
 .icon-id{
     @include icon(0px, -120px);
 }
+.icon-sketch{
+    @include icon(-120px, -120px);
+}
+.icon-figma{
+    @include icon(-60px, -120px);
+}
