@@ -12634,6 +12634,12 @@ a.text-dark:hover, a.text-dark:focus {
   color: #bb9974;
 }
 
+.btn-reading {
+  color: #6c757d;
+  margin: 0;
+  padding: 0;
+}
+
 .bg-sign-light {
   background-color: #ffe1e4;
 }
