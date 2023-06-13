@@ -1,4 +1,8 @@
 //全域共用
+::selection{
+    background-color: $primary;
+    color: $white;
+}
 .title-font{
     font-family: 'Dancing Script', cursive;
 }
@@ -72,8 +76,7 @@
     margin: 0;
     padding: 0;
 }
-//Self-enrichment
+//Self-growth
 .bg-sign-light{
     background-color: #ffe1e4;
 }
-
