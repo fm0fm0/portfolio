@@ -1,34 +1,16 @@
-//全域共用
-::selection{
-    background-color: $primary;
-    color: $white;
-}
-.title-font{
-    font-family: 'Dancing Script', cursive;
-}
-.subtitle-underline{
-    border-bottom: 2px solid $primary; 
-}
-.h7{
-    font-size: 14px;
-}
-//navbar
-.navbar{
-    box-shadow: 0 3px 5px -1px rgba(#000000, .2); 
-}
 //intro
 .intro{
     height: 90vh;
     overflow: hidden;
     position: relative;
 }
-.bg-img{
-    background-image: url(../images/bg-banner.svg);
+.hero-img{
+    background-image: url(../../images/bg-banner.svg);
     background-position: 0 0;
     background-size: auto 100%;
     background-repeat: repeat-x;
     background-attachment: scroll;
-    background-color: #ffe1e4;
+    background-color: $pink-500;
     width: 200%;
     height: 100%;
     position: absolute;
@@ -50,9 +32,25 @@
     width: 160px;
     box-shadow: 1px 1px 10px rgba(0,0,0, .2);
 }
+
+.hero-banner{
+    background-image: url(../../images/bg-banner.svg);
+    background-position: 0 0;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-color: $pink-500;
+    width: 200%;
+    height: 100%;
+}
+.designer-box{
+    min-width:750px;
+    @include media-breakpoint-down(md){
+        min-width: 90%;
+        width: 90%;     
+    }
+}
 //experience
 .experience{
-    max-width: 800px;
     overflow: hidden;
 }
 .timeline-wrap{
@@ -78,5 +76,56 @@
 }
 //Self-growth
 .bg-sign-light{
-    background-color: #ffe1e4;
+    background-color: $pink-500;
+}
+
+// feature
+.feature-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $pink-300;
+    color: $gray-600;
+    min-height: 300px;
+    width: calc(100% / 3);
+    border: 1px solid $white;
+    @include media-breakpoint-down(md){
+        width: 100%;
+        min-height: 200px;
+    }
+    &:hover{
+        background-color: $pink-500;
+        transition: .4s all ease-in;
+    }
+    .title{
+       span{
+        display: block;
+       } 
+    }
+}
+
+// 
+.process-group{
+    .title{
+        // background: rgba($primary, 20%);
+        background: $primary;
+    }
+    > div{
+        &:nth-child(1){
+            .title{
+                background: #E7D1C0;
+            }
+        }
+        &:nth-child(2){
+            .title{
+                background: #D4B49D;
+            }
+        }
+        &:nth-child(3){
+            .title{
+                background: #C19F7A;
+            }
+        }
+    }
 }

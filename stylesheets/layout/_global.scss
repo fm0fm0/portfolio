@@ -1,0 +1,17 @@
+//全域共用
+body{
+    letter-spacing: .5px;
+}
+::selection{
+    background-color: $primary;
+    color: $white;
+}
+
+.subtitle-underline{
+    border-bottom: 2px solid $primary; 
+}
+
+//navbar
+.navbar{
+    box-shadow: 0 3px 5px -1px rgba($black, 20%); 
+}

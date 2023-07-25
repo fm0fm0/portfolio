@@ -3,20 +3,27 @@
 }
 
 .subtitle-font{
-    font-family: monospace;
-    margin-top: 2rem;
-    padding-bottom: .5rem;
-    border-bottom: 2px solid $primary;
+    margin-top: 1rem;
     color: $primary;
     text-align: center;
 }
+.title-font {
+    font-family: "Dancing Script", cursive;
+}
 .banner-content{
     background-color: $light;
-    text-align: center;
     .banner-img{
         width: 100%;
         max-width: 1560px;
         height: auto;
+    }
+}
+.section-wrap{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    @include media-breakpoint-down(md) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
 }
 .box-img{
@@ -44,9 +51,9 @@ ul.list-style li{
     }
 }
 @include media-breakpoint-down(md) {
-    .subtitle-font{
-        font-size: 1.25rem;
-    }
+    // .subtitle-font{
+    //     font-size: 1.25rem;
+    // }
     .box-txt-content{
         h4{
             font-size: 1.25rem;
@@ -60,4 +67,152 @@ ul.list-style li{
             display: block;
         }
     }
+}
+
+
+// arrow
+.arrow-down{
+    background: url("/images/icon-arrow-down-fill.svg") no-repeat center center;
+    width: 25px;
+    height: 25px;
+}
+.arrow-right{
+    background: url("/images/icon-arrow-right-fill.svg") no-repeat center center;
+    width: 25px;
+    height: 25px;
+}
+
+.plan-group{
+    .item{
+        width: 100%;
+        background: rgba(#1774C7, 0.05);
+        border-radius: 8px;
+    }
+    .list-number{
+        position: relative;
+        margin: 0 5rem 3.5rem 0;
+        @include media-breakpoint-down(md){
+            margin: 0 4rem 4rem 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            bottom:0;
+            left: -10px;
+            width: 150px;
+            height: 1px;
+            background-color: $gray-600;
+            transform: rotate(-45deg);
+            @include media-breakpoint-down(md){
+                width: 120px;
+            }
+        }
+        .point{
+            line-height: 1;
+            @include media-breakpoint-down(md){
+                font-size: 0.75rem;
+            }
+        }
+        .number{
+            font-size: 3rem;
+            line-height: 1;
+            @include media-breakpoint-down(md){
+                font-size: 2rem;
+            }
+        }
+    }
+    .txtbox{
+        width: 35%;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .icon{
+        @include media-breakpoint-down(md){
+            transform: rotate(90deg);
+        }
+    }
+    strong{
+        color: #1774C7;
+    }
+}
+
+.article-wrap{
+    p,blockquote{
+        max-width: 720px;
+        letter-spacing: .5px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.125rem;
+        @include media-breakpoint-down(lg){
+            font-size: 1rem;
+        }
+    }
+    .article-title{
+        position: relative;
+        letter-spacing: .5px;
+        span{
+            position: relative;
+            &::after{
+                content: url("/images/title-decoration.png");
+                position: absolute;
+                right: -6rem;
+                bottom: -2.5rem;
+                transform: translateX(-50%);
+            }
+
+        }
+    }
+    .figure{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// 
+.hero-bg{
+    background-image: linear-gradient(rgba(0, 51, 98, .75),rgba(0, 51, 98, .75)), url("/images/project/tnli/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    img{
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.figure-caption{
+    text-align: center;
+}
+
+.rule-group{
+    .title{
+        color: #1774C7;
+    }
+}
+
+.summary-box{
+    margin: 8rem auto;
+    @include media-breakpoint-down(md){
+        margin: 4rem auto;
+    }
+    h3{
+        &::before{
+            content: "▍";
+        }
+    }
+    p{
+        max-width: 100%;
+        // color: $gray-700;
+    }
+}
+
+.bg-figure{
+    background-color: $gray-200;
 }

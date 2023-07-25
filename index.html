@@ -14,582 +14,105 @@
     <meta name="og:type" content="https://fm0fm0.github.io/resume/">
     <meta name="og:url" content="https://fm0fm0.github.io/resume/">
     <meta name="og:image" content="https://fm0fm0.github.io/MyResume/images/og_img.jpg">
-    <title>首頁｜It's Rainie - UI/UX designer portfolio</title>
+    <title>Homepage｜It's Rainie - UI/UX designer portfolio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="bookmark" href="images/favicon.ico" />
-    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="public/css/all.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR24VVX27Z"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-XR24VVX27Z');
+        gtag('config', 'G-XR24VVX27Z');
     </script>
 </head>
 
 <body>
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"
-                        title="It's Rainie - UI/UX designer portfolio">
-                    <h2 class="h5 d-inline">Resume</h2>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="logo" title="It's Rainie - UI/UX designer portfolio">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#experience">經歷</a>
+                            <a class="nav-link" href="page-tnli.html">精選作品</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#gallery">作品</a>
+                            <a class="nav-link" href="about.html#designProcess">設計方法</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#skills">技能</a>
+                            <a class="nav-link" href="about.html">關於我</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#study">學習</a>
-                        </li>
-                        <!-- <li class="nav-item mx-1">
-                            <a href="file/rainie_wang_resume.pdf" class="btn btn-outline-info btn-sm rounded-pill"
-                                target="_blank"><i class="fas fa-cloud-download-alt"></i>
-                                PDF版下載</a>
+                        <!-- <li class="nav-item ms-3">
+                            <a href="file/rainie_wang_resume.pdf" class="nav-link border border-primary rounded-pill text-primary"><i class="fas fa-cloud-download-alt"></i>
+                                下載履歷</a>
                         </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- kv -->
+        <!-- hero image -->
         <header class="intro">
-            <div class="bg-img"></div>
+            <div class="hero-img"></div>
             <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="bg-white-translucent py-32" style="min-width:750px;">
-                    <div class="row">
-                        <div class="col-md-4 text-center my-12">
-                            <img src="images/index/avatar.png" class="rounded-circle headshot" alt="Rainie Wang">
+                <div class="designer-box bg-white-translucent py-5 px-4 mx-3 rounded-1">
+                    <div class="row align-items-center ">
+                        <div class="col-md-4 text-center my-2">
+                            <img class="rounded-circle headshot" src="images/index/avatar.png" alt="Rainie Wang">
                         </div>
                         <div class="col-md-8">
                             <div class="text-center text-md-start">
-                                <h1 class="h2">王雨軒 Rainie Wang</h1>
-                                <span class="d-block  mb-82">UI/UX Designer</span>
-                                <p>喜歡設計且熱衷於研究美好事物，<br class="d-md-none">相信設計有無限可能。</p>
-                                <a href="mailto:rainiewang70@gmail.com" target="_blank" class="d-block text-decoration-none">
-                                    <i class="far fa-envelope fa-2x me-12"></i>rainiewang70@gmail.com
-                                </a>
-                                <span class="d-block ">Taipei, Taiwan</span>
+                                <h1 class="h2">I'm Rainie Wang</h1>
+                                <p class="fs-5 mb-2">UI/UX Designer & Web Developer</p>
+                                <p>喜歡設計且熱衷於研究美好事物，<br class="d-md-none">相信設計有無限可能。探尋直至核心，對世界的奧妙好奇永無止盡</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="" id="btn-experience"><span class="scroll-down"></span></a>
-
+            <a href="#"><span class="scroll-down"></span></a>
         </header>
-        <!-- 經驗 -->
-        <section class="experience m-auto px-12 py-48" id="experience">
-            <h2 class="text-center mb-3">經歷 <span class="title-font">Experience</span></h2>
-            <!-- 7 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">UI 設計師</h3>
-                    <span class="text-secondary">關鍵評論網股份有限公司 2021.12 ~ Now</span>
-                    <ul class="h7">
-                        <li>負責設計 UI/UX、製作 UI Kit、Mockup、Prototype，與團隊討論產品方向，維護 UI Component 確保符合產品需求</li>
-                        <li>負責前端開發、與後端工程師協作、與產品經理確認需求並及時反饋、確保UI設計與視覺設計一致性</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">線上課程進修與技能提升</h3>
-                    <span class="text-secondary">UIUX及前端技能 2020.7 ~ 2021.11</span>
-                    <ul class="h7">
-                        <li>學習 Figma / Sketch</li>
-                        <li>學習 Wireframe、Mockup、Prototype 之應用</li>
-                        <li>學習 iOS & Android UI Design Guideline</li>
-                        <li>學習 Git 版本控制</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">網頁設計師</h3>
-                    <span class="text-secondary">冠諭科技股份有限公司 2019.6 ~ 2020.6</span>
-                    <ul class="h7">
-                        <li>與後端協作進行網站平台改版/維護</li>
-                        <li>網頁相關視覺設計(Banner / E-dm / Newsletter)</li>
-                        <li>無障礙網頁開發與維護</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">語言學校與線上課程進修</h3>
-                    <span class="text-secondary">網頁設計相關技能 2018.8 ~ 2019.6</span>
-                    <!-- <p class="h7">學習資源：Hexschool 六角學院 - 網頁設計課程 / 李建杭(Amos Lee) - 金魚都能懂的網頁教學系列 / W3Schools</p> -->
-                    <ul class="h7">
-                        <li>HTML / CSS</li>
-                        <li>jQuery</li>
-                        <li>Responsive Web Design (RWD)</li>
-                        <li>Bootstrap</li>
-                        <li>SCSS</li>
-                    </ul>
-                    <span class="text-secondary">Cebu International Academy (CIA) 2018.4 ~ 2018.7</span>
-                    <ul class="h7">
-                        <li>ESL英文進修</li>
-                        <li>Toeic多益檢定</li>
-                        <li>Volunteer志工活動</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 3 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">品牌視覺設計師</h3>
-                    <span class="text-secondary">格蕾寢飾國際有限公司(電商) 2016／03～2018／04</span>
-                    <ul class="h7">
-                        <li>視覺設計與陳列佈置</li>
-                        <li>網頁行銷素材設計(Banner設計、EDM、產品內文圖、通路廣告等)</li>
-                        <li>網站改版設計規劃</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 2 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">品牌視覺設計師</h3>
-                    <span class="text-secondary">美商新秀麗太平洋有限公司台北分公司 2015／07～2016／02</span>
-                    <ul class="h7">
-                        <li>視覺設計與陳列佈置</li>
-                        <li>網頁素材(Banner設計、廣告素材)</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 1 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">品牌視覺設計師</h3>
-                    <span class="text-secondary">東家建設有限公司 2011／10～2015／02</span>
-                    <ul class="h7">
-                        <li>視覺設計與陳列佈置</li>
-                        <li>VI設計(企業視覺識別)</li>
-                        <li>網站改版設計與規劃</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 0 -->
-            <div class="row">
-                <div class="col-2 timeline-wrap">
-                    <div class="timeline">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <h3 class="text-primary">數位媒體設計系</h3>
-                    <span class="text-secondary">國立雲林科技大學 2007～2011</span>
+        <!-- feature -->
+        <section class="feature-content py-5">
+            <div class="container">
+                <div class="d-flex flex-wrap w-100">
+                    <a class="feature-card text-decoration-none" href="/page-tnli.html">
+                        <h2 class="title">精選作品<span class="title-font">Featured Works</span></h2>
+                    </a>
+                    <a class="feature-card text-decoration-none" href="/about.html#designProcess">
+                        <h2 class="title">設計流程<span class="title-font">Design Process</span></h2>
+                    </a>
+                    <a class="feature-card text-decoration-none" href="/about.html">
+                        <h2 class="title">關於我<span class="title-font">About</span></h2>
+                    </a>
                 </div>
             </div>
         </section>
-        <!-- PORTFOLIO -->
-        <section class="bg-light py-48" id="gallery">
+        <footer class="bg-light py-3">
             <div class="container">
-                <h2 class="text-center mb-48">專案成就 <span class="title-font">Gallery</span></h2>
-                <!-- <div class="row">
-                    <div class="col-md-8 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <a href="page-accessories.html" target="_blank" class="item-hover" title="了解專案詳情">
-                            <img src="images/index/cover-accessories.png" class="img-fluid w-100" alt="飾品電商">
-                        </a>
-                    </div>
-                    <div class="col-md-4  mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <h3 class="mb-8 h4">飾品電商</h3>
-                        <p>專售耳環飾品的電商網站為主題，是一個bootstrap+scss+layout結合挑戰，挑戰層級更高，除了的視覺設計及網頁技巧掌握外，RWD視覺動線安排增加了更多困難度，layout為自己設計。
-                        </p>
-                        <span class="badge text-bg-info">illustrator</span>
-                        <span class="badge text-bg-info">photoshop</span>
-                        <span class="badge text-bg-info">Bootstrap</span>
-                        <span class="badge text-bg-info">scss</span>
-                        <span class="badge text-bg-info">jQuery</span>
-                        <span class="badge text-bg-info">VS Code</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">UI design</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-accessories.html" target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="#" target="_blank">前往專案網站 <i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="row">
-                    <div class="col-md-6 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <a href="page-baphiq.html" target="_blank" class="item-hover" title="了解專案詳情">
-                            <img src="images/index/cover-baphiq.png" class="img-fluid" alt="政府機關入口網站">
-                        </a>
-                        <h3 class="my-8 h4">政府機關入口網站</h3>
-                        <p>行政院農業委員會動植物防疫檢疫局為行政院農業委員會的附屬機關，負責動植物的防疫檢疫工作。此專案為政府機關之入口網站改版，如何將資訊很好的呈現又不至於在網站迷路是很重要的重點。專案中我擔任 UI 設計師的角色。
-                        </p>
-                        <span class="badge text-bg-info">illustrator</span>
-                        <span class="badge text-bg-info">photoshop</span>
-                        <span class="badge text-bg-info">UI design</span>
-                        <span class="badge text-bg-info">無障礙網頁</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-baphiq.html" target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="#" target="_blank">前往專案網站 <i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-40 item-hover wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                        <a href="page-2020-km-design-award.html" target="_blank" title="了解專案詳情">
-                            <img src="images/index/cover-km-design-award.png" class="img-fluid" alt="徵件競賽活動網站">
-                        </a>
-                        <h3 class="my-8 h4">徵件競賽活動網站</h3>
-                        <p>農業知識入口網擁有 141 個農、林、漁、畜相關的主題館，懶人包具有圖文並茂、簡單易懂、容易傳播的特性，為讓大眾能夠更快速便利獲取知識，邀請擅長資訊整理、歸納及平面設計的好手們，靈活運用網站內豐富多元的資料，設計主題館知識懶人包。我擔任網頁設計師的角色，負責視覺設計與切版及製作社群宣傳相關素材。
-                        </p>
-                        <span class="badge text-bg-info">illustrator</span>
-                        <span class="badge text-bg-info">photoshop</span>
-                        <span class="badge text-bg-info">Bootstrap</span>
-                        <span class="badge text-bg-info">scss</span>
-                        <span class="badge text-bg-info">jQuery</span>
-                        <span class="badge text-bg-info">VS Code</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">UI design</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-2020-km-design-award.html" target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="#" target="_blank">前往專案網站 <i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="row">
-                    <div class="col-md-7 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <a href="#" target="_blank" class="item-hover pe-none" title="了解專案詳情">
-                            <img src="images/index/cover-tnli@2x.jpg" class="img-fluid w-100" alt="飾品電商">
-                        </a>
-                    </div>
-                    <div class="col-md-5  mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <h3 class="mb-16 h4">媒體新聞網站</h3>
-                        <p>『關鍵評論網 The News Lens
-                            』是台灣的獨立評論媒體網站，提供多元觀點，讓一個事件有不同切入角度，讓社群世代的讀者，能輕鬆分享和參與討論。主要受眾為關注亞洲訊息的海外華僑、在台外籍人士等，有中文版、English
-                            Edition、日本版三種語系版本。此次redesign為國際版，專案中我擔任 UI 設計師。
-                        </p>
-                        <span class="badge text-bg-info">UI design</span>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">UI Kit</span>
-                        <span class="badge text-bg-info">redesign</span>
-                        <!-- <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-tnli.html" target="_blank">了解專案詳情
-                                <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="https://international.thenewslens.com/"
-                                target="_blank">前往專案網站 <i class="fas fa-link"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <a href="#" target="_blank" class="item-hover pe-none" title="了解專案詳情">
-                            <img src="images/index/cover-semiconductor@2x.jpg" 
-                                class="img-fluid w-100" 
-                                srcset="images/index/cover-semiconductor@2x.jpg 300w,
-                                        images/index/cover-semiconductor@2x.jpg 600w,
-                                        images/index/cover-semiconductor@2x.jpg 900w,
-                                        images/index/cover-semiconductor@2x.jpg 1200w"
-                                sizes="(max-width: 480px) 300px,
-                                        (max-width: 768px) 600px,
-                                        (max-width: 1024px) 900px,
-                                        1200px"
-                                alt="專題報導網站">
-                        </a>
-                    </div>
-                    <div class="col-md-5 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <h3 class="mb-16 h4">專題報導網站</h3>
-                        <p>『Inside 半導體人才趨勢全解析專題』介紹目前台灣半導體產業趨勢及現況，人才短缺等的議題。專案中我擔任 UI 設計師。</p>
-                        <span class="badge text-bg-info">UI design</span>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">UI Kit</span>
-                        <!-- <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-semiconductor.html"
-                                target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32 ms-8"
-                                href="https://www.inside.com.tw/semiconductor-talent-insight" target="_blank">前往專案網站 <i
-                                    class="fas fa-link"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <a href="#" target="_blank" class="item-hover pe-none" title="了解專案詳情">
-                            <img src="images/index/cover-game@2x.jpg" 
-                                class="img-fluid w-100"
-                                srcset="images/index/cover-game@2x.jpg 300w,
-                                        images/index/cover-game@2x.jpg 600w,
-                                        images/index/cover-game@2x.jpg 900w,
-                                        images/index/cover-game@2x.jpg 1200w"
-                                sizes="(max-width: 480px) 300px,
-                                        (max-width: 768px) 600px,
-                                        (max-width: 1024px) 900px,
-                                        1200px"
-                                alt="政見配對遊戲">
-                        </a>
-                    </div>
-                    <div class="col-md-5 mb-40 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
-                        <h3 class="mb-16 h4">政見配對遊戲</h3>
-                        <p>『給你珊時萬，你想投給誰？』為關鍵評論網推出的 2022 年台北市長選舉政見配對遊戲，黃珊珊？陳時中？蔣萬安？你心目中台北的願景，最符合哪個候選人的政見？進入投票所之前，讓我們先來做個配對測驗！</p>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">UI Guideline</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">prototype</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <!-- <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-9in1-game.html"
-                                target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32 ms-8"
-                                href="https://www.thenewslens.com/election/2022/game">前往專案網站 <i
-                                    class="fas fa-link"></i></a>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-md-6 mb-40 item-hover wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                        <a class="item-hover pe-none" href="#" target="_blank">
-                            <img src="images/index/cover-semiconductor@2x.jpg" class="img-fluid">
-                        </a>
-                        <h3 class="mt-24 mb-16 h4">專題報導網站</h3>
-                        <p>『Inside 半導體人才趨勢全解析專題』介紹目前台灣半導體產業趨勢及現況，人才短缺等的議題。專案中我擔任 UI 設計師。</p>
-                        <span class="badge text-bg-info">UI design</span>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">UI Kit</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-semiconductor.html"
-                                target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32"
-                                href="https://www.inside.com.tw/semiconductor-talent-insight" target="_blank">前往專案網站 <i
-                                    class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-40 item-hover wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                        <a href="#" target="_blank">
-                            <img src="images/index/cover-saas@2x.jpg" class="img-fluid">
-                        </a>
-                        <h3 class="mt-24 mb-16 h4">文章管理系統 SaaS 服務</h3>
-                        <p>『inkmagine』是文章管理系統SaaS服務，提供打造出獨一無二的媒體品牌。從使用者管理、內容管理、客製化彈性、內容推薦、到廣告投放，Inkmagine
-                            提供成功所需的所有工具。專案中我擔任UI設計師。</p>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">UI Guideline</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">prototype</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">多國語系</span>
-                        <span class="badge text-bg-info">網站重構</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-inkmagine.html"
-                                target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-40 item-hover wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                        <a href="#" target="_blank">
-                            <img src="images/index/cover-9in1@2x.jpg" class="img-fluid">
-                        </a>
-                        <h3 class="mt-24 mb-16 h4">媒體新聞活動網站</h3>
-                        <p>『2022 九合一選舉看關鍵』是關鍵評論網於 2022 年推出，內容包含選舉和公投即時開票功能、政見配對遊戲、議員案公報、台北市長候選人 Podcast
-                            專訪及九合一大選並有各地選情即時報導、選後評論及數據分析，帶領讀者透過各層面了解本屆選戰，有中文版、英文版、日文版三種語系版本。專案中我擔任UI設計師。</p>
-                        <span class="badge text-bg-info">UI design</span>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">UI Kit</span>
-                        <span class="badge text-bg-info">多國語系</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-9in1-tnl.html"
-                                target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-32">前往專案網站 <i
-                                    class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-40 item-hover wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                        <a href="#" target="_blank">
-                            <img src="images/index/cover-game@2x.jpg" class="img-fluid">
-                        </a>
-                        <h3 class="mt-24 mb-16 h4">政見配對遊戲</h3>
-                        <p>『給你珊時萬，你想投給誰？』為關鍵評論網推出的 2022
-                            台北市長選舉政見配對遊戲，黃珊珊？陳時中？蔣萬安？你心目中台北的願景，最符合哪個候選人的政見？進入投票所之前，讓我們先來做個配對測驗！</p>
-                        <span class="badge text-bg-info">Figma</span>
-                        <span class="badge text-bg-info">UI Guideline</span>
-                        <span class="badge text-bg-info">Mockup</span>
-                        <span class="badge text-bg-info">prototype</span>
-                        <span class="badge text-bg-info">RWD</span>
-                        <div class="btn-wrap">
-                            <a class="btn btn-outline-primary btn-sm mt-32" href="page-9in1-game.html"
-                                target="_blank">了解專案詳情 <i class="fas fa-arrow-right"></i></a>
-                            <a class="btn btn-outline-primary btn-sm mt-32"
-                                href="https://www.thenewslens.com/election/2022/game">前往專案網站 <i
-                                    class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <!-- skills -->
-        <section class=" py-48" id="skills">
-            <div class="container">
-                <h2 class="text-center mb-48">工作技能 <span class="title-font">Skills</span></h2>
-                <div class="row">
-                    <div class="col-md-6 mb-48">
-                        <h3 class="subtitle-underline text-primary pb-8 mb-86 h5">UI/UX設計 <span class="title-font">UI/UX
-                                Design</span></h3>
-                        <div class="mb-8">
-                            <ul class="list-unstyled d-flex">
-                                <li class="me-8 icon-figma" title="Figma"></li>
-                                <li class="me-8 icon-sketch" title="Sketch"></li>
-                                <li class="me-8 icon-ai" title="Adobe illustrator"></li>
-                                <li class="icon-ps" title="Adobe photoshop"></li>
-                            </ul>
-                        </div>
-                        <p>Figma / Sketch / Illustrator / Photoshop</p>
-                        <ul class="h7">
-                            <li>UI / UX 設計</li>
-                            <li>UI Kit / UI Pattern / UI guideline</li>
-                            <li>wireframe</li>
-                            <li>mockup</li>
-                            <li>prototype</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 mb-48">
-                        <h3 class="subtitle-underline text-primary pb-8 mb-86 h5">前端開發 <span class="title-font">Web
-                                Design</span></h3>
-                        <div class="mb-8">
-                            <ul class="list-unstyled d-flex">
-                                <li class="me-8 icon-html" title="HTML5"></li>
-                                <li class="me-8 icon-css" title="CSS3"></li>
-                                <li class="me-8 icon-jq" title="jQuery"></li>
-                                <li class="me-8 icon-bootstrap" title="Bootstrap"></li>
-                                <li class="me-8 icon-scss" title="scss"></li>
-                                <li class="icon-git" title="git"></li>
-                            </ul>
-                        </div>
-                        <ul class="h7">
-                            <li>能使用bootstrap搭配scss開發響應式網站</li>
-                            <li>能使用html+css做Responsive Web Design響應式設計</li>
-                            <li>能使用動畫效果插件提升網頁質感</li>
-                            <li>能使用jQuery做簡單網頁互動效果</li>
-                            <li>使用Git搭配Sourcetree做版本控制</li>
-                        </ul>
-
-                        <ul class="list-unstyled d-flex">
-                            <li class="me-8 icon-vscode" title="Visual Studio Code"></li>
-                            <li class="me-8 icon-sublime" title="Sublime Text"></li>
-                        </ul>
-                        <p class="h7">[ 編輯器 ] Visual Studio Code / Sublime Text</p>
-
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h3 class="subtitle-underline text-primary pb-8 mb-86 h5">溝通合作 <span
-                                class="title-font">Cooperation</span></h3>
-                        <p class="h7">重視團隊合作，具良好的溝通合作能力也能獨立作業。</p>
-
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h3 class="subtitle-underline text-primary pb-8 mb-86 h5">未來規劃 <span
-                                class="title-font">Goals</span></h3>
-                        <p class="h7">未來目標將著重於 UI / UX 領域，持續深耕。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Self-growth -->
-        <section class="bg-sign-light py-48" id="study">
-            <div class="container">
-                <h2 class="text-center mb-48">個人成長 <span class="title-font">Self-growth</span></h2>
-                <div class="row">
-                    <div class="col-md-4 d-flex justify-content-center flex-column">
-                        <img src="images/index/study-01.svg" class="img-fluid" alt="線上課程">
-                        <h3 class="my-8 h4 text-center">線上課程</h3>
-                        <p>藉由網路多樣化的教學平台與教學文章像個海綿般吸收充實，打開網頁設計之旅。</p>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center flex-column">
-                        <img src="images/index/study-03.svg" class="img-fluid" alt="閱讀習慣">
-                        <h3 class="my-8 h4 text-center">閱讀習慣</h3>
-                        <p>閱讀可滿足旺盛的求知慾，它是充實知識的捷徑，無論是書籍或網路文章，我都非常喜歡。</p>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center flex-column">
-                        <img src="images/index/study-02.svg" class="img-fluid" alt="海外遊學">
-                        <h3 class="my-8 h4 text-center">海外遊學</h3>
-                        <p>離開學校步入職場多年後，將自己歸零重新回歸學生身份，踏出舒適圈充電迎接更多挑戰。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="bg-light py-48">
-            <div class="container">
-                <div class="row flex-column flex-md-row">
-                    <div class="col d-md-flex">
-                        <div>
-                            <img src="images/index/avatar.png" class="rounded-circle me-16" alt="avatar" style="width:50px;"
-                                title="It's Rainie">
-                        </div>
-                        <p>
-                            Hi, 我是王雨軒 Rainie<br>
-                            謝謝您看完這份履歷<br>
-                            歡迎與我聯繫<a href="mailto:rainiewang70@gmail.com" target="_blank"> rainiewang70@gmail.com</a>
+                <div class="d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="images/index/avatar.png" class="rounded-circle me-3" alt="avatar"
+                            style="width:50px;" title="It's Rainie">
+                        <p class="mb-0">
+                            Hi, 歡迎與我聯繫 <a class="ms-2" href="mailto:rainiewang70@gmail.com"><i class="far fa-envelope fa-2x me-2 text-primary"></i></a>
                         </p>
                     </div>
-                    <div class="col d-md-flex align-items-md-end justify-content-md-end">
-                        <p class="">copyright © Rainie Wang</p>
-                    </div>
+                    <p class="mb-0">copyright 2023 © Rainie Wang</p>
                 </div>
             </div>
         </footer>
     </div>
-    <a href="" class="gotop" id="gotop" title="回頂部"></a>
+    <a href="javascript:void(0);" class="gotop" id="gotop" title="回頂部"></a>
     <!-- js -->
     <script async src="js/jquery-3.4.1.min.js"></script>
     <script async src="js/wow.min.js"></script>

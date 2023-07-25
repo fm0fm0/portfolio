@@ -1,0 +1,34 @@
+// max-container
+@mixin max-container($max-container){
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $max-container;
+}
+
+.max-container-sm{
+    @include max-container(540px);
+}
+
+.max-container-md{
+    @include max-container(760px);
+}
+
+.max-container-lg{
+    @include max-container(960px);
+}
+
+.max-container-xl{
+    @include max-container(1200px);
+}
+
+.max-container-xxl{
+    @include max-container(1320px);
+}
+.max-container-xxxl{
+    @include max-container(1560px);
+}

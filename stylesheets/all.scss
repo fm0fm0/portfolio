@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-// helpers
-@import "helpers/_bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
+// helpers
+@import "helpers/bootstrap";
+@import "layout/global";
 //components
+@import "components/max-container";             //自訂容器寬度
 @import "components/tool-icon";                 //自訂連結文字效果
 @import "components/item-hover";                //hover效果
 @import "components/scroll-down";               //彈跳的按鈕
