@@ -1,17 +1,14 @@
 .gotop{
     position: fixed;
-    right: 40px;
-    bottom: 20px;
+    right: 15px;
+    bottom: 15px;
+    z-index: $zindex-fixed;
     font-size: 2.5em;
-    opacity: .5;
-    color: $gray-700;
+    color: $gray-500;
+    transition: color .3s ease-in;
     border: none;
     background: none;
     &:hover{
-        opacity: 1;
+        color: $gray-700;
     }
-    @include media-breakpoint-down(sm) {
-        right: 15px;
-    }
-
 }
