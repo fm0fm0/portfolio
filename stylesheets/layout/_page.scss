@@ -83,6 +83,7 @@ ul.list-style li{
 }
 
 .plan-group{
+    line-height: 1.6;
     .item{
         width: 100%;
         background: rgba(#1774C7, 0.05);
@@ -137,13 +138,11 @@ ul.list-style li{
             transform: rotate(90deg);
         }
     }
-    strong{
-        color: #1774C7;
-    }
 }
 
 .article-wrap{
-    p,blockquote{
+    line-height: 2;
+    p,blockquote,ol{
         max-width: 720px;
         letter-spacing: .5px;
         margin-left: auto;
@@ -152,6 +151,12 @@ ul.list-style li{
         @include media-breakpoint-down(lg){
             font-size: 1rem;
         }
+    }
+    strong{
+        color: #1774C7;
+    }
+    mark{
+        background: linear-gradient(0deg,transparent,rgba(23, 116, 199,.2) 0,rgba(23, 116, 199,.2) 40%,transparent 0)
     }
     .article-title{
         position: relative;

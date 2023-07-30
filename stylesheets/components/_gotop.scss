@@ -3,11 +3,16 @@
     right: 15px;
     bottom: 15px;
     z-index: $zindex-fixed;
-    font-size: 2.5em;
+    font-size: 40px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
     color: $gray-500;
     transition: color .3s ease-in;
     border: none;
-    background: none;
+    background: $white;
+    border-radius: 50%;
+    padding: 0;
     &:hover{
         color: $gray-700;
     }

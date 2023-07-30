@@ -15,3 +15,11 @@ body{
 .navbar{
     box-shadow: 0 3px 5px -1px rgba($black, 20%); 
 }
+.navbar-brand{
+    img{
+        height: 40px;
+        @include media-breakpoint-down(md){
+            height: 32px;
+        }
+    }
+}
