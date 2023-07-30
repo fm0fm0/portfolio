@@ -86,7 +86,7 @@
     align-items: center;
     text-align: center;
     background-color: $pink-300;
-    color: $gray-600;
+    color: $gray-700;
     min-height: 300px;
     width: calc(100% / 3);
     border: 1px solid $white;
@@ -108,7 +108,6 @@
 // 
 .process-group{
     .title{
-        // background: rgba($primary, 20%);
         background: $primary;
     }
     > div{
