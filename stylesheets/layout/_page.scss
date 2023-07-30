@@ -164,7 +164,7 @@ ul.list-style li{
         span{
             position: relative;
             &::after{
-                content: url("/images/title-decoration.png");
+                content: url("../../images/title-decoration.png");
                 position: absolute;
                 right: -6rem;
                 bottom: -2.5rem;

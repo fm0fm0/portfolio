@@ -9985,7 +9985,7 @@ ul.list-style li {
   position: relative;
 }
 .article-wrap .article-title span::after {
-  content: url("/images/title-decoration.png");
+  content: url("../../images/title-decoration.png");
   position: absolute;
   right: -6rem;
   bottom: -2.5rem;
