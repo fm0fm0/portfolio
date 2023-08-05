@@ -9630,20 +9630,22 @@ body {
   right: 15px;
   bottom: 15px;
   z-index: 1030;
-  font-size: 40px;
-  line-height: 40px;
   width: 40px;
   height: 40px;
-  color: #adb5bd;
+  color: #6c757d;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   border: none;
-  background: #fff;
+  background: rgna(#e9ecef, 50%);
   border-radius: 50%;
   padding: 0;
 }
 .gotop:hover {
-  color: #495057;
+  color: #212529;
+}
+.gotop i {
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .intro {
@@ -9817,13 +9819,13 @@ footer .headshot {
 }
 
 .section-wrap {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 767.98px) {
   .section-wrap {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -9998,8 +10000,8 @@ ul.list-style li {
 }
 
 .hero-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 51, 98, 0.75)), to(rgba(0, 51, 98, 0.75))), url("/images/project/tnli/hero-bg.jpg");
-  background-image: linear-gradient(rgba(0, 51, 98, 0.75), rgba(0, 51, 98, 0.75)), url("/images/project/tnli/hero-bg.jpg");
+  background-image: url("../images/project/tnli/hero-bg.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 51, 98, 0.75)), to(rgba(0, 51, 98, 0.75)));
+  background-image: url("../images/project/tnli/hero-bg.jpg"), linear-gradient(rgba(0, 51, 98, 0.75), rgba(0, 51, 98, 0.75));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

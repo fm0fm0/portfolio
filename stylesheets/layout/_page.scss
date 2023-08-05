@@ -19,11 +19,11 @@
     }
 }
 .section-wrap{
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     @include media-breakpoint-down(md) {
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 .box-img{
@@ -181,7 +181,7 @@ ul.list-style li{
 
 // 
 .hero-bg{
-    background-image: linear-gradient(rgba(0, 51, 98, .75),rgba(0, 51, 98, .75)), url("/images/project/tnli/hero-bg.jpg");
+    background-image: url("../images/project/tnli/hero-bg.jpg"),linear-gradient(rgba(0, 51, 98, .75),rgba(0, 51, 98, .75)) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
