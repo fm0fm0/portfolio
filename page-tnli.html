@@ -19,7 +19,7 @@
     <link rel="bookmark" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" defer>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"  defer>
     <link rel="stylesheet" href="public/css/all.min.css" defer>
     <!-- Google tag (gtag.js) -->
@@ -51,7 +51,7 @@
                             <a class="nav-link" href="index.html">首頁</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page-tnli.html">精選作品</a>
+                            <a class="nav-link" href="index.html">精選作品</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html#designProcess">設計方法</a>
@@ -63,13 +63,21 @@
                 </div>
             </div>
         </nav>
+        <!-- project-kv -->
+        <section class="w-100">
+            <picture>
+                <source srcset="images/project/tnli/kv-tnli.jpg" media="(max-width: 480px)">
+                <source srcset="images/project/tnli/kv-tnli.jpg" media="(min-width: 481px)">
+                <img class="img-fluid" src="images/project/tnli/kv-tnli.jpg" alt="關鍵評論網國際版">
+            </picture>
+        </section>
         <!-- project-header -->
         <section class="my-5">
-            <div class="container">
+            <div class="container max-container-lg">
                 <div class="d-md-flex align-items-center h-100 justify-content-md-between align-items-md-end">
                     <div>
                         <p class="mb-1">關鍵評論網國際版 The News Lens English Edition</p>
-                        <h1 class="fs-2 mb-3 mb-md-0">媒體新聞網站改版重構</h1>
+                        <h1 class="fs-2 mb-3 mb-md-0">媒體新聞網站 Redesign</h1>
                     </div>
                     <a class="btn btn-outline-primary ms-md-3" href="https://international.thenewslens.com/"  target="_blank">前往網站
                         <i class="fas fa-external-link-alt"></i></a>
@@ -77,180 +85,83 @@
                 <hr>
                 <ul class="list-unstyled d-md-flex justify-content-md-between">
                     <li class="w-100">專案角色：<span class="d-md-block">UI/UX 設計師</span></li>
-                    <li class="w-100">執行時間：<span class="d-md-block">2023/03~2023/04</span></li>
+                    <li class="w-100">專案年份：<span class="d-md-block">2023</span></li>
                     <li class="w-100">裝置平台：<span class="d-md-block">Web(RWD)</span></li>
                 </ul>
             </div>
         </section>
-        <!-- project-kv -->
-        <section class="hero-bg">
-            <picture>
-                <source srcset="images/project/tnli/kv-sm.webp" media="(max-width: 480px)">
-                <source srcset="images/project/tnli/kv-lg.webp" media="(min-width: 481px)">
-                <img class="img-fluid" src="images/project/tnli/kv-lg.png" alt="關鍵評論網國際版">
-            </picture>
-        </section>
         <!-- project-intro -->
         <article class="article-wrap">
             <div class="max-container-lg summary-box">
-                <h2 class="fs-5 text-primary px-lg-5 mb-3 mb-lg-4">專案背景</h2>
-                <p class="px-lg-5 pb-3 pb-lg-5">「關鍵評論網」陸續進行改版計劃，中文版已進行首頁視覺翻新，而國際版同步設計語彙。以中文版作為參照，重構目標是<mark>保持現有架構</mark>、<mark>最少程度的網站程式改動</mark>、<mark>優化動線與視覺</mark>、<mark>確保各語系版本統一</mark>。同時為了慶祝10週年紀念，品牌LOGO也將更新，展現全新形象。</p>
-                <hr>
+                <h2 class="fs-5 text-primary mb-3 mb-lg-4">專案背景</h2>
+                <p class="pb-3 pb-lg-3">「關鍵評論網」陸續進行改版計劃，中文版已進行首頁視覺翻新，而國際版同步設計語彙。以中文版作為參照，重構目標是<mark>保持現有架構</mark>、<mark>最少程度的網站程式改動</mark>、<mark>優化動線與視覺</mark>、<mark>確保各語系版本統一</mark>。同時為了慶祝10週年紀念，品牌LOGO也將更新，展現全新形象。</p>
             </div>
             <div class="container">
-                <div class="section-wrap">
-                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>設計規劃</span></h2>
-                    <p class="text-center">依影響範圍調整方向分為全域範圍與局部頁面範圍，並描述現況痛點及改善方案：</p>
-                    <h3 class="text-center my-4">全域範圍痛點與策略</h3>
-                    <div class="max-container-lg">
-                        <ul class="plan-group list-unstyled d-grid gap-4">
-                            <!-- 1 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">01</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>目前的 Style Guide 不夠完整，只有品牌色深中淺三色，無法應用到全站。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>建立完整 Style Guide</strong>，遵循品牌色擴充 Color Scale，以提升設計系統的泛用性。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- 2 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">02</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>數位裝置上閱讀體驗受影響，全站標題及內文皆使用襯線體字體文字較小時辨識度較差。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>改無襯線字型</strong>，提升閱讀體驗。選用襯線字體作為標題裝飾，保留一部分品牌原有特色。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- 3 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">03</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>文字顏色對比度不佳，造成閱讀困難，且字級設定沒有統一的規範。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>提高文字對比度</strong>，讓背景在深色或淺色時，文字都清晰易讀。並建立字級規範，確保一致性。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- 4 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">04</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>英文語系與中文版版型套用後，字距與行距需要微調才能達到舒適的閱讀留白空間。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>針對字元間距校調</strong>，中文與英文字元的筆劃複雜度差異，針對英文調整閱讀留白空間，提升舒適性。</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="text-center mt-5 mb-4">局部頁面痛點與策略</h3>
-                    <div class="max-container-lg">
-                        <ul class="plan-group list-unstyled d-grid gap-4">
-                            <!-- 1 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">01</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>會員專區的頁籤看不出來是可以被點擊的，而且資料沒有設計空值狀態。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>新增空值狀態設計</strong>，調整頁籤排版，讓頁籤的可點擊性更明顯，提升使用者體驗。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- 2 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">02</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>選單佈局的可擴充性不佳，因為改版後選單選項增多，原先的佈局無法容納。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>重新設計選單</strong>，增加擴充性以確保未來可能的成長，並調整成與中文版相同的排版，以保持一致性。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- 3 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">03</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>feature 區塊結構複雜，裝飾用的效果不明顯且難以模組化開發。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>簡化 feature 卡片設計</strong>，保留整體設計風格的前提下，調整成複用性高的元件模組，提高複用性和易維護性。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- 4 -->
-                            <li class="item d-flex align-items-start p-3 p-lg-4">
-                                <div class="list-number">
-                                    <div class="point">POINT</div>
-                                    <div class="number">04</div>
-                                </div>
-                                <div class="d-md-flex align-items-center h-100">
-                                    <div class="txtbox flex-fill">
-                                        <p>文章列表頁的文章卡片數量規則不一致且數量過多，造成視覺負擔較重。</p>
-                                    </div>
-                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
-                                    <div class="txtbox flex-fill">
-                                        <p><strong>統一文章卡片的數量規格</strong>，提高維護便利性，並降低使用者瀏覽時的視覺負擔。</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="section-wrap">
+                <div class="section-wrap max-container-lg">
                     <h2 class="article-title fs-3 text-primary text-center mb-5"><span>資訊架構</span></h2>
                     <figure class="figure">
                         <picture>
                             <source srcset="images/project/tnli/img-functional-map-sm.webp" media="(max-width: 480px)">
                             <source srcset="images/project/tnli/img-functional-map-lg.webp" media="(min-width: 481px)">
-                            <img class="img-fluid" src="images/project/tnli/img-functional-map-lg.webp" alt="以功能區塊作為分類的資料架構表">
+                            <img class="img-fluid" src="images/project/tnli/img-functional-map-lg.png" alt="以使用情境劃分功能區塊">
                         </picture>
-                        <figcaption class="figure-caption">以功能區塊作為分類的資料架構表</figcaption>
                     </figure>
-
+                </div>
+                <div class="section-wrap">
+                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>設計規劃</span></h2>
+                    <p class="text-center">依照品牌端、設計端、開發端 3 大面向，列出痛點及優化方案：</p>
+                    <div class="max-container-lg">
+                        <ul class="plan-group list-unstyled d-grid gap-4">
+                            <!-- 1 -->
+                            <li class="item d-flex align-items-start p-3">
+                                <div class="list-number">
+                                    <div class="point">POINT</div>
+                                    <div class="number">01</div>
+                                </div>
+                                <div class="d-md-flex align-items-center h-100">
+                                    <div class="txtbox flex-fill">
+                                        <p>Style Guide 不夠完整，色彩延伸性與字體應用缺乏規則</p>
+                                    </div>
+                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
+                                    <div class="txtbox flex-fill">
+                                        <p>遵循品牌精神，建立擴充性高且完整的 Style Guide，提升設計系統泛用性</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li class="item d-flex align-items-start p-3">
+                                <div class="list-number">
+                                    <div class="point">POINT</div>
+                                    <div class="number">02</div>
+                                </div>
+                                <div class="d-md-flex align-items-center h-100">
+                                    <div class="txtbox flex-fill">
+                                        <p>顏色對比度不足、沒有空值狀態設計、襯線字體在內文數位閱讀體驗不佳</p>
+                                    </div>
+                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
+                                    <div class="txtbox flex-fill">
+                                        <p>提升對比度到AA級、設計合理的空值狀態、調整字體，提升閱讀體驗</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li class="item d-flex align-items-start p-3">
+                                <div class="list-number">
+                                    <div class="point">POINT</div>
+                                    <div class="number">03</div>
+                                </div>
+                                <div class="d-md-flex align-items-center h-100">
+                                    <div class="txtbox flex-fill">
+                                        <p>佈局擴充性不足、結構複雜、規則不統一</p>
+                                    </div>
+                                    <img class="icon mx-auto my-3 mx-md-3 d-block" src="images/icon-arrow-right-fill.svg" alt="*">
+                                    <div class="txtbox flex-fill">
+                                        <p>建立擴充性與彈性兼具的佈局、簡化結構、統一規則</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="section-wrap">
                     <h2 class="article-title fs-3 text-primary text-center mb-5"><span>視覺原則3大方向</span></h2>
@@ -261,7 +172,7 @@
                                     <picture>
                                         <source srcset="images/project/tnli/img-desige-rule-sm.webp" media="(max-width: 480px)">
                                         <source srcset="images/project/tnli/img-desige-rule-lg.webp" media="(min-width: 481px)">
-                                        <img class="img-fluid" src="images/project/tnli/img-desige-rule-lg.webp" alt="設計方向以三大主軸作為視覺原則">
+                                        <img class="img-fluid" src="images/project/tnli/img-desige-rule-lg.png" alt="設計方向以三大主軸作為視覺原則">
                                     </picture>
                                 </figure>
                             </div>
@@ -300,7 +211,7 @@
                         </picture>
                         <figcaption class="figure-caption">Color Scale</figcaption>
                     </figure>
-                    <p>色彩計畫以 LOGO 的品牌色為基礎，進行顏色的定義並擴充色階。為了維持整體一致性，特別選用了偏藍色調的灰階。不僅能豐富網站的內容，同時使色彩更加單純和諧，讓重要內容得以凸顯，為網站帶來更加統一的視覺效果。</p>
+                    <p>原先只有兩個品牌色、灰階為中性灰，新版以既有品牌色為基礎擴充色階，而灰階是偏藍色調使整體更和諧。顏色越單純越能讓網站豐富的內容被凸顯出來。</p>
                 </div>
             </div>
             <div class="container">
@@ -314,7 +225,7 @@
                         </picture>
                         <figcaption class="figure-caption">標題與內文字體組合</figcaption>
                     </figure>
-                    <p class="mt-3">以文章內容為主的網站中，字體方面考量是極為重要的，直接影響使用者的閱讀體驗。為了在龐大的文章數量中傳達專業性、信賴感和穩定度，決定採用無襯線字體作為基礎字體，讓數位閱讀更舒適，同時在區塊性標題上選用有襯線字體以保留專業嚴肅調性。</p>
+                    <p class="my-5">以文章為主的內容網站，字體考量特別重要。為了傳達專業性、信賴感和穩定度，採用無襯線字體作為基礎字體，讓數位閱讀更舒適，同時在區塊性標題上選用有襯線字體以保留專業嚴肅調性。此外特別考慮作業系統支援性，選用內建字體提升載入速度。</p>
                     <figure class="figure">
                         <picture>
                             <source srcset="images/project/tnli/img-font-plan02-sm.webp" media="(max-width: 480px)">
@@ -323,9 +234,8 @@
                         </picture>
                         <figcaption class="figure-caption">文章頁字體改版前後比對</figcaption>
                     </figure>
-                    <p>此外，特別考慮作業系統的支援性，選用內建字體作為英文字體，以提升載入速度，確保使用者能快速且流暢地閱讀內容。這樣的字體計畫將大幅提升閱讀體驗，讓使用者感受到高品質的內容呈現。</p>
                 </div>
-                <div class="section-wrap">
+                <div class="section-wrap max-container-lg">
                     <h2 class="article-title fs-3 text-primary text-center mb-5"><span>首頁改版</span></h2>
                     <figure class="figure">
                         <picture>
@@ -336,11 +246,6 @@
                         <figcaption class="figure-caption">首頁改版前後比對</figcaption>
                     </figure>
                     <p>國際版首頁改版目標是保持與中文版相同的視覺風格，根據語系的特殊需求進行區塊的增減。同時也會納入中文版改版後的使用者回饋和網站需求，針對這些重要回饋進行重點優化。</p>
-                    <ol>
-                        <li><strong>按鈕重新設計：</strong>根據中文版使用者反饋，重新設計了"more"按鈕，增加按鈕面積並調整排版位置，使得使用者更容易找到。</li>
-                        <li><strong>feature卡片重新設計：</strong>為了增加開發和維護的便利性，保留原設計風格的前提下，對feature卡片進行了簡化。</li>
-                        <li><strong>新增 Contributing Writers 區塊：</strong>這是國際版獨有的區塊，在風格保持一致的情況下，增加 Writers 卡片區塊。</li>
-                    </ol>
                 </div>
             </div>
             <div class="container max-container-lg">
@@ -354,49 +259,7 @@
                         </picture>
                         <figcaption class="figure-caption">選單改版前後比對</figcaption>
                     </figure>
-                    <p>原先的選單排列方式將「專區」、「趨勢」和「語系」並列，導致視覺上的權重層級曖昧。在新版選單中，以區分權重同時考慮未來擴充需求為目標進行了以下改進：</p>
-                    <ol>
-                        <li><strong>重新分類項目：</strong> 將「專區」移除，重新分為「分類類別」、「趨勢」和「語系」，明確區分層級。</li>
-                        <li><strong>優化排序：</strong> 根據重要程度重新排序項目，提升選單效能，方便使用者尋找選項。</li>
-                        <li><strong>字體粗細區分：</strong> 運用字體的粗細視覺區分分類類別和趨勢trending區塊。</li>
-                        <li><strong>擴充性考量：</strong> 保留橫向空間，方便未來擴充選項，確保選單彈性和可持續性。</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="container">
-                <div class="section-wrap">
-                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>文章頁優化</span></h2>
-                    <figure class="figure">
-                        <picture>
-                            <source srcset="images/project/tnli/img-article-page-renew-sm.webp" media="(max-width: 480px)">
-                            <source srcset="images/project/tnli/img-article-page-renew-lg.webp" media="(min-width: 481px)">
-                            <img class="img-fluid" src="images/project/tnli/img-article-page-renew-lg.png" alt="文章頁改版前後比對">
-                        </picture>
-                        <figcaption class="figure-caption">文章頁改版前後比對</figcaption>
-                    </figure>
-                    <p>原先的排版於左側區塊上方為作者欄位，最下方是hashtag欄位，有些情境下還會出現文章推薦欄位疊加在hashtag欄位上方，使用者不容易發現文章推薦的存在，另外因應字型的改變也有優化的設計。</p>
-                    <ol>
-                        <li><strong>改變文章頁排版：</strong> 將左右區塊的格局合併為一個區塊的格局，瀏覽體驗上更順暢。</li>
-                        <li><strong>文章寬度縮限：</strong>將文章的寬度限制在較窄的範圍內。避免了使用者需要在過寬的區域上移動視線，增加閱讀便利性。</li>
-                        <li><strong>文字行距及字距調整：</strong>對文章頁的文字行距及字距進行了校調，變得寬鬆一些。讓使用者在閱讀文章時，文字之間的間隔更加舒適。</li>
-                    </ol>
-                </div>
-                <div class="section-wrap">
-                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>會員專區優化</span></h2>
-                    <figure class="figure">
-                        <picture>
-                            <source srcset="images/project/tnli/img-member-renew-sm.webp" media="(max-width: 480px)">
-                            <source srcset="images/project/tnli/img-member-renew-lg.webp" media="(min-width: 481px)">
-                            <img class="img-fluid" src="images/project/tnli/img-member-renew-lg.png" alt="會員專區改版前後比對">
-                        </picture>
-                        <figcaption class="figure-caption">會員專區改版前後比對</figcaption>
-                    </figure>
-                    <p>為了優化會員專區頁面的使用體驗，進行了以下改版重構：</p>
-                    <ol>
-                        <li><strong>重新設計排版：</strong>考慮到日後可能有擴增的需求，重新規劃了選單的位置，將選單放在左側，主要內容則在右側，這樣的格局更有利於未來的擴展。</li>
-                        <li><strong>改善頁籤設計：</strong>先前的頁籤設計僅顯示純文字，難以讓使用者直覺辨識其為一系列可以切換的頁籤。現在重新設計頁籤外觀，增強辨識性，讓使用者快速切換頁籤內容。</li>
-                        <li><strong>空資料狀態優化：</strong>先前的空資料狀態下畫面未被撐開，也沒有好的引導提示使用者。現在重新優化設計，增加了容器最小高度及簡單的引導提示。</li>
-                    </ol>
+                    <p>舊版選單層級不明確、擴充性不足，新版依照權重重新規劃，增加擴充性。以區分權重同時考慮未來擴充需求為目標進行重新分類項目、優化排序、字體粗細區分、擴充性考量等改進。</p>
                 </div>
             </div>
             <div class="container max-container-lg">
@@ -408,35 +271,50 @@
                             <source srcset="images/project/tnli/img-article-list-renew-lg.webp" media="(min-width: 481px)">
                             <img class="img-fluid" src="images/project/tnli/img-article-list-renew-lg.png" alt="文章列表卡片改版前後比對">
                         </picture>
-                        <figcaption class="figure-caption">文章列表卡片改版前後比對</figcaption>
                     </figure>
-                    <p>整體差異不大，主要著重於區分資訊權重為目標進行改善：</p>
-                    <ol>
-                        <li><strong>Hashtag顯示問題： </strong>改版前Hashtag超過2個就會被隱藏，難以點擊且容易被忽略。現在改為超過卡片寬度的Hashtag會被隱藏，讓Hashtag露出較多又不會過於冗長。</li>
-                        <li><strong>統一列表頁卡片數量：</strong>探索階段中發現站內每個列表頁有6種卡片數量並不統一。為提升使用體驗，統一所有列表頁的卡片數量，確保頁面一致性。</li>
-                    </ol>
-                    
+                    <p>整體差異不大，主要著重於卡片的區分資訊權重為目標進行統一圖片比例、提高顏色對比度、Hashtag容易被忽略等問題優化，其次為統一列表頁卡片數量。</p>                    
                 </div>
             </div>
             <div class="container max-container-md">
                 <hr class="my-5">
+                <h2 class="article-title fs-3 text-primary text-center mb-5"><span>頁碼優化</span></h2>
                 <figure class="figure bg-white py-4 rounded">
                     <picture>
                         <source srcset="images/project/tnli/img-pagination-renew-sm.webp" media="(max-width: 480px)">
                         <source srcset="images/project/tnli/img-pagination-renew-lg.webp" media="(min-width: 481px)">
                         <img class="img-fluid" src="images/project/tnli/img-pagination-renew-lg.png" alt="頁碼改版前後比對">
                     </picture>
-                    <figcaption class="figure-caption">頁碼改版前後比對</figcaption>
                 </figure>
-                <p>原先的頁碼有橫線裝飾分隔的設計，在手機版及千位數的情境下頁碼就會容納不下，且當前狀態不明顯，針對分頁頁碼進行以下優化：</p>
-                <ol>
-                    <li><strong>千位數頁碼設計：</strong>考量文章數量龐大，頁碼需要應對千位數的情況。重新設計以確保在視覺上不影響使用者的閱讀和操作體驗。</li>
-                    <li><strong>強調當前頁面：</strong>突顯當前頁碼位置，讓使用者清楚自己所在的頁面。</li>
-                    <li><strong>增大觸控面積：</strong>設計了更大的觸控面積，讓使用者更容易點擊頁碼。</li>
-                </ol>
+                <p>舊版頁碼有裝飾線設計，在手機版及千位數的時寬度會爆版，且當前頁碼狀態不明顯，故針對頁碼進行千位數頁碼設計、強調當前頁碼狀態的調整並增大觸控面積的優化。</p>
             </div>
             <div class="container">
-                <div class="section-wrap">
+                <div class="section-wrap max-container-lg">
+                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>文章頁優化</span></h2>
+                    <p>左右欄的佈局在RWD及未來擴充時內容呈現容易受限，改成單欄佈局擴充彈性更佳。</p>
+                    <figure class="figure">
+                        <picture>
+                            <source srcset="images/project/tnli/img-article-page-renew-sm.webp" media="(max-width: 480px)">
+                            <source srcset="images/project/tnli/img-article-page-renew-lg.webp" media="(min-width: 481px)">
+                            <img class="img-fluid" src="images/project/tnli/img-article-page-renew-lg.png" alt="文章頁改版前後比對">
+                        </picture>
+                        <figcaption class="figure-caption">文章頁改版前後比對</figcaption>
+                    </figure>
+                </div>
+                <div class="section-wrap max-container-lg">
+                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>作者卡片優化</span></h2>
+                    <figure class="figure">
+                        <picture>
+                            <source srcset="images/project/tnli/img-author-card-sm.webp" media="(max-width: 480px)">
+                            <source srcset="images/project/tnli/img-author-card-lg.webp" media="(min-width: 481px)">
+                            <img class="img-fluid" src="images/project/tnli/img-author-card-lg.png" alt="作者卡片優化前後對比">
+                        </picture>
+                        <figcaption class="figure-caption">作者卡片優化前後對比</figcaption>
+                    </figure>
+                    <p>舊版 Subscribe 和 Add to Favorite 按鈕語意曖昧，分不清是訂閱文章還是追蹤作者，新版依重要程度重新排版，將 Add to Favorite改為 follow，Subscribe 按鈕移動到文章底部。</p>
+                </div>
+
+            <div class="container">
+                <div class="section-wrap max-container-lg">
                     <h2 class="article-title fs-3 text-primary text-center mb-5"><span>作者列表頁優化</span></h2>
                     <figure class="figure">
                         <picture>
@@ -446,18 +324,24 @@
                         </picture>
                         <figcaption class="figure-caption">文章頁改版前後比對</figcaption>
                     </figure>
-                    <p>原先的設計從作者介紹區塊所佔的版面較長，此次改版專案目標度對焦時，釐清需求作者專區的目的其實在於導引讀者閱讀該作者發表過的文章，作者介紹是其次，於是重新定義這頁的權重：</p>
-                    <ol>
-                        <li><strong>整併和集中區塊：</strong>原先作者介紹的區塊較長，將其進行整併和集中，版面縮短讓讀者能更快速地閱覽到下方的文章列表，增加觸擊率。</li>
-                        <li><strong>移除個性化背景功能：</strong>經過需求確認發現使用率過低且對於讀者增加作者好感度有限。決議移除這個功能，以減少界面的複雜度。</li>
-                        <li><strong>保留預設背景圖樣：</strong>為了保持視覺一致性，仍然保留預設背景圖樣，將其刷淡並縮小高度作裝飾用途增加美感。</li>
-                    </ol>
+                    <p>舊版作者介紹面積較大，重點放在介紹作者，然而需求會議目標對焦時，釐清此區塊的目的在導引讀者閱讀該作者發表過的文章，作者介紹是其次，於是重新定義這頁的權重，縮短作者介紹以便更快的閱覽到下方的文章卡片。</p>
                 </div>
             </div>
-            <div class="container max-container-lg">
+                <div class="section-wrap max-container-lg">
+                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>會員專區優化</span></h2>
+                    <figure class="figure">
+                        <picture>
+                            <source srcset="images/project/tnli/img-member-renew-sm.webp" media="(max-width: 480px)">
+                            <source srcset="images/project/tnli/img-member-renew-lg.webp" media="(min-width: 481px)">
+                            <img class="img-fluid" src="images/project/tnli/img-member-renew-lg.png" alt="會員專區改版前後比對">
+                        </picture>
+                        <figcaption class="figure-caption">會員專區改版前後比對</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="container max-container-md">
                 <div class="section-wrap">
                     <h2 class="article-title fs-3 text-primary text-center mb-5"><span>狀態頁設計</span></h2>
-                    <p>針對狀態頁進行了優化設計，以提升使用者的情緒感受和趣味性。以下是的優化方案：</p>
                     <figure class="figure">
                         <picture>
                             <source srcset="images/project/tnli/img-error404-sm.webp" media="(max-width: 480px)">
@@ -466,11 +350,7 @@
                         </picture>
                         <figcaption class="figure-caption">狀態頁 ERROR 404 設計</figcaption>
                     </figure>
-                    <p>狀態頁 ERROR 404 設計：</p>
-                    <ol>
-                        <li><strong>保留既有元素：</strong> 保留了原本使用海倫凱勒名言的設計，以"404 not found"為主題，打開新的幸福之門。這樣的概念能讓使用者感到有趣和豐富的人文感。</li>
-                        <li><strong>添加趣味性：</strong> 在右下角添加了一個小門的元素，滑鼠移入後門會打開，讓使用者有一個小發現，增加了趣味性和互動性。</li>
-                    </ol>
+                    <p>狀態頁 ERROR 404 設計，舊版採用海倫凱勒名言寓意通往幸福之門，新版延續此概念在畫面右下角添加一道門，滑鼠移入後門會打開增加趣味性。</p>
                     <hr class="my-5">
                     <figure class="figure">
                         <picture>
@@ -480,11 +360,7 @@
                         </picture>
                         <figcaption class="figure-caption">狀態頁 ERROR 500 設計</figcaption>
                     </figure>
-                    <p>狀態頁 ERROR 500 設計：</p>
-                    <ol>
-                        <li><strong>設計語彙一致性：</strong>原本這頁是沒有設計的，為了保持整體一致性，將背景換成米開朗基羅的《創世紀》。這不僅增加了藝術美感，也讓整個網站的風格更加統一。</li>
-                        <li><strong>幽默的藝術感：</strong>以《創世紀》中的男子與先知寓意為網站與讀者之間的連結，解釋狀態碼 500 Internal Server Error 代表伺服器錯誤回應只是暫時性的狀態，正在努力修復中，精彩內容很快就會與讀者見面，以緩解使用者的困惑和不耐煩情緒。</li>
-                    </ol>
+                    <p>狀態頁 ERROR 500 設計：舊版沒有設計此頁面，新版延續人文風格，採用《創世紀》中的男子與先知寓意為網站與讀者之間的連結，解釋伺服器錯誤只是暫時的，精彩內容很快就會與讀者見面。</p>
                 </div>
             </div>
         </article>
@@ -496,24 +372,21 @@
                     <source srcset="images/project/tnli/img-style-guide-lg.webp" media="(min-width: 481px)">
                     <img class="img-fluid w-100" src="images/project/tnli/img-style-guide-lg.png" alt="style guide">
                 </picture>
-                <picture>
+                <!-- <picture>
                     <source srcset="images/project/tnli/img-rwd-display-sm.webp" media="(max-width: 480px)">
                     <source srcset="images/project/tnli/img-rwd-display-lg.webp" media="(min-width: 481px)">
                     <img class="img-fluid w-100" src="images/project/tnli/img-rwd-display-lg.png" alt="RWD display">
-                </picture>
+                </picture> -->
             </div>
         </article>
     </div>
-    <footer class="bg-light py-3">
+    <footer class="footer py-5">
         <div class="container">
-            <div class="d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center">
-                <div class="d-flex align-items-center">
-                    <img class="rounded-circle headshot me-3" src="images/index/avatar-sm-1x.png" srcset="images/index/avatar-sm-1x.png 1x, images/index/avatar-sm-2x.png 2x" alt="Rainie Wang" />
-                    <p class="mb-0">
-                        Hi, 歡迎與我聯繫 <a class="ms-2" href="mailto:rainiewang70@gmail.com" aria-label="e-mail"><i class="far fa-envelope fa-1x me-2 text-primary"></i></a>
-                    </p>
-                </div>
-                <p class="mb-0">copyright 2023 © Rainie Wang</p>
+            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                <p class="mb-0">
+                    <a class="text-decoration-none" href="mailto:rainiewang70@gmail.com" aria-label="e-mail"><i class="far fa-envelope fa-1x me-2 text-primary"></i> mail to me </a>
+                </p>
+                <p class="mb-0 ms-4">copyright 2023 © Rainie Wang</p>
             </div>
         </div>
     </footer>

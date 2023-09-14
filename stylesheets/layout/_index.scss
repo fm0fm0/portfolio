@@ -25,6 +25,33 @@
         }
     }
 }
+.index-hero{
+    background-image: url(../../images/index/hero-bg.jpg);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 9;
+    h1, p{
+        font-family: 'Noto Serif TC', serif;
+    }
+}
+.text-shadow{
+    text-shadow: 0px 4px 4px rgba(246, 110, 129, 0.50);
+}
+.btn-more{
+    border-radius: var(--none, 0px);
+    border: 3px solid #F584AA;
+    background: rgba(255, 255, 255, 0.60);
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #F584AA;
+    display: inline-block;
+    &:hover, &:focus{
+        background: #F584AA;
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+}
 .bg-white-translucent{
     background-color: rgba(255,255,255, .8);
 }
@@ -128,7 +155,8 @@
         }
     }
 }
-footer{
+.footer{
+    background: #FEE1E4;
     .headshot{
         width: 50px;
     }

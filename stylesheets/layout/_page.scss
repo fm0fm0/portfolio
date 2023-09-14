@@ -153,7 +153,8 @@ ul.list-style li{
         }
     }
     strong{
-        color: #1774C7;
+        // color: #1774C7;
+        color: $primary;
     }
     mark{
         background: linear-gradient(0deg,transparent,rgba(23, 116, 199,.2) 0,rgba(23, 116, 199,.2) 40%,transparent 0)
@@ -170,7 +171,6 @@ ul.list-style li{
                 bottom: -2.5rem;
                 transform: translateX(-50%);
             }
-
         }
     }
     .figure{
@@ -181,7 +181,7 @@ ul.list-style li{
 
 // 
 .hero-bg{
-    background-image: url("../images/project/tnli/hero-bg.jpg"),linear-gradient(rgba(0, 51, 98, .75),rgba(0, 51, 98, .75)) ;
+    background-image: url("../images/project/tnli/hero-bg.jpg"),linear-gradient(180deg, #085BA5 0%, #1774C7 23.45%, #3FA4FF 100%) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -222,4 +222,18 @@ ul.list-style li{
 
 .bg-figure{
     background-color: $gray-200;
+}
+.bg-election-game-video{
+    background: url("../../images/project/election-game/election_game_bg.jpg") no-repeat center center;
+    background-size: cover;
+    video{
+        max-width: 280px;
+    }
+}
+.bg-semiconductor-video{
+    background: url("../../images/project/semiconductor/semiconductor_bg.jpg") no-repeat center center;
+    background-size: cover;
+    video{
+        max-width: 280px;
+    }
 }

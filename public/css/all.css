@@ -9685,6 +9685,37 @@ body {
   }
 }
 
+.index-hero {
+  background-image: url(../../images/index/hero-bg.jpg);
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+}
+.index-hero h1, .index-hero .h1, .index-hero p {
+  font-family: "Noto Serif TC", serif;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(246, 110, 129, 0.5);
+}
+
+.btn-more {
+  border-radius: var(--none, 0px);
+  border: 3px solid #F584AA;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #F584AA;
+  display: inline-block;
+}
+.btn-more:hover, .btn-more:focus {
+  background: #F584AA;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .bg-white-translucent {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -9791,7 +9822,10 @@ body {
   background: #C19F7A;
 }
 
-footer .headshot {
+.footer {
+  background: #FEE1E4;
+}
+.footer .headshot {
   width: 50px;
 }
 
@@ -9973,7 +10007,7 @@ ul.list-style li {
   }
 }
 .article-wrap strong {
-  color: #1774C7;
+  color: #ac8d6b;
 }
 .article-wrap mark, .article-wrap .mark {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(0, rgba(23, 116, 199, 0.2)), color-stop(40%, rgba(23, 116, 199, 0.2)), color-stop(0, transparent));
@@ -10000,8 +10034,8 @@ ul.list-style li {
 }
 
 .hero-bg {
-  background-image: url("../images/project/tnli/hero-bg.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 51, 98, 0.75)), to(rgba(0, 51, 98, 0.75)));
-  background-image: url("../images/project/tnli/hero-bg.jpg"), linear-gradient(rgba(0, 51, 98, 0.75), rgba(0, 51, 98, 0.75));
+  background-image: url("../images/project/tnli/hero-bg.jpg"), -webkit-gradient(linear, left top, left bottom, from(#085BA5), color-stop(23.45%, #1774C7), to(#3FA4FF));
+  background-image: url("../images/project/tnli/hero-bg.jpg"), linear-gradient(180deg, #085BA5 0%, #1774C7 23.45%, #3FA4FF 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10040,6 +10074,22 @@ ul.list-style li {
 
 .bg-figure {
   background-color: #e9ecef;
+}
+
+.bg-election-game-video {
+  background: url("../../images/project/election-game/election_game_bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.bg-election-game-video video {
+  max-width: 280px;
+}
+
+.bg-semiconductor-video {
+  background: url("../../images/project/semiconductor/semiconductor_bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.bg-semiconductor-video video {
+  max-width: 280px;
 }
 
 /*!
