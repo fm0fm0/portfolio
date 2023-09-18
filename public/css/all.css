@@ -3968,6 +3968,10 @@ progress {
   --bs-aspect-ratio: 42.8571428571%;
 }
 
+.ratio-5x3 {
+  --bs-aspect-ratio: 60%;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -9494,11 +9498,6 @@ body {
   border-bottom: 2px solid #ac8d6b;
 }
 
-.navbar {
-  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-}
-
 .navbar-brand img {
   height: 40px;
 }
@@ -9994,7 +9993,7 @@ ul.list-style li {
 .article-wrap {
   line-height: 2;
 }
-.article-wrap p, .article-wrap blockquote, .article-wrap ol {
+.article-wrap p, .article-wrap ol {
   max-width: 720px;
   letter-spacing: 0.5px;
   margin-left: auto;
@@ -10002,7 +10001,7 @@ ul.list-style li {
   font-size: 1.125rem;
 }
 @media (max-width: 991.98px) {
-  .article-wrap p, .article-wrap blockquote, .article-wrap ol {
+  .article-wrap p, .article-wrap ol {
     font-size: 1rem;
   }
 }
@@ -10077,19 +10076,38 @@ ul.list-style li {
 }
 
 .bg-election-game-video {
-  background: url("../../images/project/election-game/election_game_bg.jpg") no-repeat center center;
+  background: url("../../images/project/election-game/election_game_bg_lg.jpg") no-repeat center center;
   background-size: cover;
 }
 .bg-election-game-video video {
   max-width: 280px;
 }
+@media (max-width: 575.98px) {
+  .bg-election-game-video {
+    background: url("../../images/project/election-game/election_game_bg_sm.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
 
 .bg-semiconductor-video {
-  background: url("../../images/project/semiconductor/semiconductor_bg.jpg") no-repeat center center;
+  background: url("../../images/project/semiconductor/semiconductor_bg_lg.jpg") no-repeat center center;
   background-size: cover;
 }
 .bg-semiconductor-video video {
   max-width: 280px;
+}
+@media (max-width: 575.98px) {
+  .bg-semiconductor-video {
+    background: url("../../images/project/semiconductor/semiconductor_bg_sm.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.bg-about {
+  background-image: url(../../images/banner-top.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*!

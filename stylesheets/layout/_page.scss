@@ -142,7 +142,7 @@ ul.list-style li{
 
 .article-wrap{
     line-height: 2;
-    p,blockquote,ol{
+    p, ol{
         max-width: 720px;
         letter-spacing: .5px;
         margin-left: auto;
@@ -153,7 +153,6 @@ ul.list-style li{
         }
     }
     strong{
-        // color: #1774C7;
         color: $primary;
     }
     mark{
@@ -224,16 +223,24 @@ ul.list-style li{
     background-color: $gray-200;
 }
 .bg-election-game-video{
-    background: url("../../images/project/election-game/election_game_bg.jpg") no-repeat center center;
+    background: url("../../images/project/election-game/election_game_bg_lg.jpg") no-repeat center center;
     background-size: cover;
     video{
         max-width: 280px;
     }
+    @include media-breakpoint-down(sm){
+        background: url("../../images/project/election-game/election_game_bg_sm.jpg") no-repeat center center;
+        background-size: cover;
+    }
 }
 .bg-semiconductor-video{
-    background: url("../../images/project/semiconductor/semiconductor_bg.jpg") no-repeat center center;
+    background: url("../../images/project/semiconductor/semiconductor_bg_lg.jpg") no-repeat center center;
     background-size: cover;
     video{
         max-width: 280px;
+    }
+    @include media-breakpoint-down(sm){
+        background: url("../../images/project/semiconductor/semiconductor_bg_sm.jpg") no-repeat center center;
+        background-size: cover;
     }
 }
