@@ -1,0 +1,33 @@
+.path {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 0;
+    animation: draw 5s linear forwards infinite;
+}
+@keyframes draw {
+    to {
+        stroke-dashoffset: 300;
+    }
+}
+
+.path-primary{
+    top: -10px;
+    left: -300px;
+    @include media-breakpoint-down(md){
+        left: -100px;
+        height: 50%;
+    }
+}
+.path-secondary{
+    bottom: -180px;
+    right: -40px;
+    @include media-breakpoint-down(md){
+        width: 50%;
+    }
+}
+.path-tertiary{
+    bottom: -180px;
+    left: 200px;
+    @include media-breakpoint-down(md){
+        width: 50%;
+    }
+}

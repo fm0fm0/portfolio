@@ -1,9 +1,40 @@
 .works-group{
+    a{
+        h2{
+            visibility: hidden;
+            // transition: .6s all ease-in;
+
+        }
+        &:hover, &:focus{
+            h2{
+                visibility: visible;
+                background-color: rgba(255,255,255,.85);
+                transition: .3s all ease-in;
+            }
+            
+        }
+    }
+}
+
+
+.recommend-group{
+    .row:first-child{
+        .col{
+            width: calc(100% / 5);
+            @include media-breakpoint-down(md){
+                width:  calc(100% / 2);
+            }
+        }
+    }
+    .row:last-child{
+        .col{
+            width: calc(100% / 5);
+            @include media-breakpoint-down(md){
+                width:  calc(100% / 3);
+            }
+        }
+    }
     .item{
-        // width: 100% / 5;
-        // display: block;
-        // @include media-breakpoint-down(md){
-        //     width: 100%;
-        // }
+        width: calc(100% / 5);
     }
 }

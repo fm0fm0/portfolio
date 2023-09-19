@@ -26,13 +26,31 @@
     }
 }
 .index-hero{
-    background-image: url(../../images/index/hero-bg.jpg);
-    background-position: 0 0;
-    background-size: 100% 100%;
+    background-image: url(../../images/index/hero-bg-lg.jpg);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     aspect-ratio: 16 / 9;
+    @include media-breakpoint-down(md){
+        height: 70vh;
+        aspect-ratio: unset;
+        background-image: url(../../images/index/hero-bg-sm.jpg);
+    }
     h1, p{
         font-family: 'Noto Serif TC', serif;
+        width: 100%;
+    }
+    h1{
+        font-size: 3rem;
+        @include media-breakpoint-down(md){
+            font-size: 2rem;
+        }
+    }
+    p{
+        font-size: 2rem;
+        @include media-breakpoint-down(md){
+            font-size: 1.15rem;
+        }
     }
 }
 .text-shadow{

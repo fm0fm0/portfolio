@@ -33,7 +33,7 @@
     </script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container">
@@ -63,33 +63,60 @@
                 </div>
             </div>
         </nav>
-        <header class="index-hero">
-            <div class="container max-container-lg text-white d-flex flex-column justify-content-center h-100">
-                <h1 class="h1 text-shadow">Rainie Wang</h1>
-                <p class="fs-4 mb-2 text-shadow">UI/UX Designer & <br class="d-md-none">Web Developer</p>
-                <div class="d-flex justify-content-end mt-5">
-                    <a class="btn-more" href="about.html">Learn More</a>
+        <header class="index-hero overflow-hidden position-relative">
+            <div class="container max-container-lg text-white d-flex flex-column justify-content-center align-items-center h-100">
+                <div class="position-relative z-1 w-100">
+                    <h1 class="text-shadow ">Rainie Wang</h1>
+                    <p class="mb-2 text-shadow">UI/UX Designer & <br class="d-sm-none">Web Developer</p>
+                    <div class="d-flex justify-content-start justify-content-sm-end mt-5 w-100">
+                        <a class="btn-more" href="about.html">Learn More</a>
+                    </div>
                 </div>
+                <svg class="path path-primary position-absolute" width="1232" height="450" viewBox="0 0 1232 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1007 449.5L0.49998 449.5L0.5 0.499946L1007 0.49999C1130.99 0.499996 1231.5 101.012 1231.5 225C1231.5 348.988 1130.99 449.5 1007 449.5Z" stroke="white" stroke-width="1"/>
+                </svg>
+                <svg class="path path-secondary position-absolute" width="450" height="682" viewBox="0 0 450 682" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M449.5 225V681.5H0.5V225C0.5 101.012 101.012 0.5 225 0.5C348.988 0.5 449.5 101.012 449.5 225Z" stroke="white" stroke-width="1"/>
+                </svg>
+                <svg class="path path-tertiary position-absolute" width="397" height="397" viewBox="0 0 397 397" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="198.5" cy="198.5" r="198" stroke="white" stroke-width="2" stroke-opacity="0.5"/>
+                    <circle cx="264" cy="12" r="8" fill="white" fill-opacity="0.8"/>
+                </svg>    
             </div>
         </header>
         <section class="container-fluid px-0 works-group" id="works">
             <div class="row g-0">
                 <div class="col-sm-6">
-                    <a class="ratio ratio-5x3 object-fit-cover" href="page-tnli.html"><img src="images/index/cover-01.jpg" class="img-fluid object-fit-cover" alt="媒體新聞網站 Redesign"></a>
+                    <a class="ratio ratio-5x3 object-fit-cover" href="page-tnli.html">
+                        <h2 class="text-center text-primary d-flex align-items-center justify-content-center z-1 border border-primary border-5 fs-4">媒體新聞網站 UI Redesign</h2>
+                        <img src="images/index/cover-01.jpg" class="img-fluid object-fit-cover" alt="媒體新聞網站 Redesign">
+                    </a>
                 </div>
                 <div class="col-sm-6">
-                    <a class="ratio ratio-5x3" href="page-inkmagine.html"><img src="images/index/cover-02.jpg" class="img-fluid object-fit-cover" alt="SaaS 服務介面 Redesign"></a>
+                    <a class="ratio ratio-5x3" href="page-inkmagine.html">
+                        <h2 class="text-center text-primary d-flex align-items-center justify-content-center z-1 border border-primary border-5 fs-4">SaaS 服務介面 UI Redesign</h2>
+                        <img src="images/index/cover-02.jpg" class="img-fluid object-fit-cover" alt="SaaS 服務介面 Redesign">
+                    </a>
                 </div>
             </div>
             <div class="row g-0">
                 <div class="col-sm-4">
-                    <a class="ratio ratio-1x1" href="page-election-game.html"><img src="images/index/cover-03.jpg" class="img-fluid object-fit-cover" alt="政見配對遊戲"></a>
+                    <a class="ratio ratio-1x1" href="page-election-game.html">
+                        <h2 class="text-center text-primary d-flex align-items-center justify-content-center z-1 border border-primary border-5 fs-4">政見配對遊戲 UI Design</h2>
+                        <img src="images/index/cover-03.jpg" class="img-fluid object-fit-cover" alt="政見配對遊戲">
+                    </a>
                 </div>
                 <div class="col-sm-4">
-                    <a class="ratio ratio-1x1" href="page-semiconductor.html"><img src="images/index/cover-04.jpg" class="img-fluid object-fit-cover" alt="主題性網站"></a>
+                    <a class="ratio ratio-1x1" href="page-semiconductor.html">
+                        <h2 class="text-center text-primary d-flex align-items-center justify-content-center z-1 border border-primary border-5 fs-4">專題網站 UI Design</h2>
+                        <img src="images/index/cover-04.jpg" class="img-fluid object-fit-cover" alt="專題網站">
+                    </a>
                 </div>
                 <div class="col-sm-4">
-                    <a class="ratio ratio-1x1" href="page-2020-km-design-award.html"><img src="images/index/cover-05.jpg" class="img-fluid object-fit-cover" alt="徵件競賽活動網站"></a>
+                    <a class="ratio ratio-1x1" href="page-2020-km-design-award.html">
+                        <h2 class="text-center text-primary d-flex align-items-center justify-content-center z-1 border border-primary border-5 fs-4">徵件活動網站 UI Design</h2>
+                        <img src="images/index/cover-05.jpg" class="img-fluid object-fit-cover" alt="徵件活動網站">
+                    </a>
                 </div>
             </div>
         </section>
@@ -104,7 +131,18 @@
             </div>
         </footer>
     </div>
-    <button class="gotop" id="gotop" title="回頂部"><i class="fas fa-chevron-up"></i></button>
+    <button class="gotop" id="gotop" title="回頂部">
+        <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0.5 640.5 40 40" enable-background="new 0.5 640.5 40 40" xml:space="preserve">
+            <path fill="#BB9974" d="M20.5,640.5c-11.027,0-20,8.973-20,20s8.973,20,20,20s20-8.973,20-20S31.527,640.5,20.5,640.5z
+            M20.5,678.833c-10.109,0-18.333-8.224-18.333-18.333s8.224-18.333,18.333-18.333c10.109,0,18.333,8.224,18.333,18.333
+            S30.609,678.833,20.5,678.833z" />
+            <g>
+                <path fill="#BB9974" d="M30.461,665.423c-0.256,0-0.512-0.098-0.707-0.293l-9.254-9.255l-9.254,9.255
+                c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414l9.961-9.962c0.375-0.375,1.039-0.375,1.414,0l9.961,9.962
+                c0.391,0.391,0.391,1.023,0,1.414C30.973,665.325,30.717,665.423,30.461,665.423z" />
+            </g>
+        </svg>
+    </button>
     <!-- js -->
     <script defer src="js/jquery-3.4.1.min.js"></script>
     <script defer src="js/wow.min.js"></script>
