@@ -9910,19 +9910,6 @@ body {
   display: block;
 }
 
-.process-group .title {
-  background: #ac8d6b;
-}
-.process-group > div:nth-child(1) .title {
-  background: #E7D1C0;
-}
-.process-group > div:nth-child(2) .title {
-  background: #D4B49D;
-}
-.process-group > div:nth-child(3) .title {
-  background: #C19F7A;
-}
-
 .footer {
   background: #FEE1E4;
 }
@@ -9941,7 +9928,7 @@ body {
 }
 
 .title-font {
-  font-family: "Dancing Script", cursive;
+  font-family: "Noto Serif TC", serif;
 }
 
 .banner-content {
@@ -10114,24 +10101,25 @@ ul.list-style li {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(0, rgba(23, 116, 199, 0.2)), color-stop(40%, rgba(23, 116, 199, 0.2)), color-stop(0, transparent));
   background: linear-gradient(0deg, transparent, rgba(23, 116, 199, 0.2) 0, rgba(23, 116, 199, 0.2) 40%, transparent 0);
 }
-.article-wrap .article-title {
+.article-wrap .figure {
+  width: 100%;
+  text-align: center;
+}
+
+.article-title {
   position: relative;
   letter-spacing: 0.5px;
 }
-.article-wrap .article-title span {
+.article-title span {
   position: relative;
 }
-.article-wrap .article-title span::after {
+.article-title span::after {
   content: url("../../images/title-decoration.png");
   position: absolute;
   right: -6rem;
   bottom: -2.5rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-.article-wrap .figure {
-  width: 100%;
-  text-align: center;
 }
 
 .hero-bg {

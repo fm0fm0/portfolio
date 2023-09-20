@@ -8,7 +8,8 @@
     text-align: center;
 }
 .title-font {
-    font-family: "Dancing Script", cursive;
+    font-family: "Noto Serif TC",serif;
+    // font-family: "Dancing Script", cursive;
 }
 .banner-content{
     background-color: $light;
@@ -158,26 +159,26 @@ ul.list-style li{
     mark{
         background: linear-gradient(0deg,transparent,rgba(23, 116, 199,.2) 0,rgba(23, 116, 199,.2) 40%,transparent 0)
     }
-    .article-title{
-        position: relative;
-        letter-spacing: .5px;
-        span{
-            position: relative;
-            &::after{
-                content: url("../../images/title-decoration.png");
-                position: absolute;
-                right: -6rem;
-                bottom: -2.5rem;
-                transform: translateX(-50%);
-            }
-        }
-    }
     .figure{
         width: 100%;
         text-align: center;
     }
 }
 
+.article-title{
+    position: relative;
+    letter-spacing: .5px;
+    span{
+        position: relative;
+        &::after{
+            content: url("../../images/title-decoration.png");
+            position: absolute;
+            right: -6rem;
+            bottom: -2.5rem;
+            transform: translateX(-50%);
+        }
+    }
+}
 // 
 .hero-bg{
     background-image: url("../images/project/tnli/hero-bg.jpg"),linear-gradient(180deg, #085BA5 0%, #1774C7 23.45%, #3FA4FF 100%) ;
