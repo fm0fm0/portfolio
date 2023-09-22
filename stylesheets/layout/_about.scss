@@ -3,4 +3,10 @@
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
+    @include media-breakpoint-down(md){
+        background-size: 150%;
+    }
+    @include media-breakpoint-down(sm){
+        background-size: 200%;
+    }
 }
