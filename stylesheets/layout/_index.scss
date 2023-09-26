@@ -56,14 +56,39 @@
 .text-shadow{
     text-shadow: 0px 4px 4px rgba(246, 110, 129, 0.50);
 }
+.slogan{
+    position: absolute;
+    top: -7vw;
+    left: 8vw;
+    @media (max-width: 920px) {
+        top: -17vw;
+    }
+    @include media-breakpoint-down(md){
+        top: -7vw;
+    }
+}
 .btn-more{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    right: 7vw;
+    bottom: 14vw;
     border-radius: var(--none, 0px);
     border: 3px solid #F584AA;
     background: rgba(255, 255, 255, 0.60);
     padding: 10px 16px;
+    min-width: 7vw;
     text-decoration: none;
     color: #F584AA;
     display: inline-block;
+    @media (max-width: 820px) {
+        right: 3vw;
+        bottom: 6vw;
+    }
+    @include media-breakpoint-down(md){
+        right: 7vw;
+        bottom: 14vw;
+    }
     &:hover, &:focus{
         background: #F584AA;
         color: #fff;
@@ -159,5 +184,11 @@
     background: #FEE1E4;
     .headshot{
         width: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .index-header-user.index-hero{
+        height: 58vh;
     }
 }

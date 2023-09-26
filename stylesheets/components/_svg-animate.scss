@@ -1,33 +1,100 @@
-.path {
-    stroke-dasharray: 300;
-    stroke-dashoffset: 0;
-    animation: draw 5s linear forwards infinite;
-}
-@keyframes draw {
-    to {
-        stroke-dashoffset: 300;
-    }
-}
-
 .path-primary{
-    top: -10px;
-    left: -300px;
+    top: -1vw;
+    left: -6vw;
+    width: 91vw;
+    height: auto;
+    stroke-dasharray: 4000px;
+    stroke-dashoffset: 0;
+    // animation:  draw-primary 4s linear reverse infinite ;
+    animation:  dash 8s linear reverse infinite;
+    // animation-delay: 0s, 8s;
     @include media-breakpoint-down(md){
-        left: -100px;
-        height: 50%;
+        top: 0vw;
+        left: -9vw;
+        width: 93vw;
     }
 }
 .path-secondary{
-    bottom: -180px;
-    right: -40px;
+    bottom: -6vw;
+    right: -6vw;
+    width: 34vw;
+    height: auto;
+    stroke-dasharray: 4000px;
+    stroke-dashoffset: 0;
+    animation:  dash 7s ease-out infinite;
+    // animation-delay:  3s;
+    @include media-breakpoint-down(md){
+        bottom: -1px;
+        right: -6vw;
+        width: 29vh;
+    }
+}
+.path-tertiary{
+    bottom: 18vw;
+    left: 19vw;
     @include media-breakpoint-down(md){
         width: 50%;
     }
 }
-.path-tertiary{
-    bottom: -180px;
-    left: 200px;
+.circle-box{
+    position: absolute;
+    bottom: 16vw;
+    left: 19vw;
     @include media-breakpoint-down(md){
-        width: 50%;
+        left: 5vw;
+    }
+}
+.circle-rotate {
+    position: absolute;
+    top: 0;
+    left:0;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 29.364vw;
+    height: 29.364vw;
+    animation: rotateCircles 10s linear infinite;
+    @include media-breakpoint-down(md){
+        width: 40vw;
+        height: 40vw;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 10vw;
+      width: 1.2vw;
+      height: 1.2vw;
+      background: #fff;
+      border-radius: 50%;
+      @include media-breakpoint-down(md){
+        top: 12.5vw;
+        width: 2vw;
+        height: 2vw;
+      }
+    }
+}
+
+@keyframes rotateCircles {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    50% {
+          stroke-dashoffset: 4000px;
+      }
+      50.01% {
+          stroke-dashoffset: -4000px;
+      }
+  }
+
+@keyframes draw-primary {
+    0%{
+      stroke-dashoffset: 0px;
+    }
+    100%{
+      stroke-dashoffset: 4000px;
     }
 }
