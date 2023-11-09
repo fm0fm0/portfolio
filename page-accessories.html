@@ -7,147 +7,177 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="王雨軒 Rainie Wang">
     <meta name="copyright" content="本網頁為王雨軒 Rainie Wang 設計製作">
-    <meta name="description" content="This is my resume about UI/UX designer. 我是 Rainie，這是一份UI/UX的作品履歷。">
-    <meta name="keywords" content="UI design, web design, UX design, portfolio, resume, 網頁設計, 網站設計, UI設計, 設計師履歷, 作品集">
+    <meta name="description" content="Rainie's web design portfolio">
+    <meta name="keywords" content="web design, UI design, UX design, portfolio, resume, 網頁設計, 網站設計, UI設計, 網頁設計作品集">
     <meta name="og:title" content="It's Rainie">
-    <meta name="og:description" content="This is my resume about UI/UX designer. 我是 Rainie，這是一份UI/UX的作品履歷。">
+    <meta name="og:description" content="This is my portfolio about web designer. 我是 Rainie，這是一份網頁設計作品集。">
     <meta name="og:type" content="https://fm0fm0.github.io/portfolio/">
     <meta name="og:url" content="https://fm0fm0.github.io/portfolio/">
     <meta name="og:image" content="https://raw.githubusercontent.com/fm0fm0/portfolio/master/images/og-img.jpg">
-    <title>飾品電商｜Rainie's UI/UX design portfolio</title>
+    <title>飾品電商｜Rainie's web design portfolio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="bookmark" href="images/favicon.ico" />
-    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"  defer>
+    <link rel="stylesheet" href="public/css/all.min.css" defer>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR24VVX27Z"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-XR24VVX27Z');
+        gtag('config', 'G-XR24VVX27Z');
     </script>
 </head>
 
 <body>
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="images/logo-rainie.svg" alt="logo" title="Rainie's UI/UX design portfolio"> <h2 class="h5 d-inline">Resume</h2></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-rainie.svg" alt="logo" title="Rainie's web design portfolio">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#experience">經歷</a>
+                            <a class="nav-link" href="index.html">首頁</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#gallery">作品</a>
+                            <a class="nav-link" href="index.html#works">精選作品</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#skills">技能</a>
+                            <a class="nav-link" href="about.html">關於我</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#study">學習</a>
+                            <a class="btn btn-outline-primary btn-sm mt-1 mx-2" href="file/web_designer__王雨軒__Rainie_Wang.pdf">下載履歷</a>
                         </li>
-                        <!-- <li class="nav-item mx-1">
-                            <a href="file/rainie_wang_resume.pdf" class="btn btn-outline-info btn-sm rounded-pill"
-                                target="_blank"><i class="fas fa-cloud-download-alt"></i>
-                                PDF版下載</a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- project -->
-        <section class="wrap">
-            <div class="container">
-                <h2 class="page-title text-center mb-3">Carolsiya 平價質感飾品 <span class="title-font">Carolsiya Accessoris</span></h2>
-                <p class="text-center">飾品電商</p>
-            </div>
-            <div class="banner-content">
-                <div class="w-100">
-                    <img src="images/project/accessories/01_kv.png" alt="Carolsiya Accessoris 主視覺" title="Carolsiya Accessoris 主視覺" class="banner-img">
+        <!-- project-kv -->
+        <section class="w-100">
+            <picture class="mx-auto">
+                <source srcset="images/project/accessories/01_kv.png" media="(max-width: 480px)">
+                <source srcset="images/project/accessories/01_kv.png" media="(min-width: 481px)">
+                <img class="img-fluid w-100" src="images/project/accessories/01_kv.png" alt="Carolsiya Accessoris 主視覺">
+            </picture>
+        </section>
+        <!-- project-header -->
+        <section class="my-5">
+            <div class="container max-container-lg">
+                <div class="d-md-flex align-items-center h-100 justify-content-md-between align-items-md-end">
+                    <div>
+                        <p class="mb-1">Carolsiya Accessoris</p>
+                        <h1 class="fs-2 mb-3 mb-md-0">飾品電商網站 Web Design</h1>
+                    </div>
+                    <a class="btn btn-outline-primary ms-md-3" href="https://fm0fm0.github.io/carolsiya/index.html"  target="_blank">前往網站
+                        <i class="fas fa-external-link-alt"></i></a>
                 </div>
+                <hr>
+                <ul class="list-unstyled d-md-flex justify-content-md-between">
+                    <li class="w-100">專案角色：<span class="d-md-block">網頁設計師</span></li>
+                    <li class="w-100">專案年份：<span class="d-md-block">2019</span></li>
+                    <li class="w-100">裝置平台：<span class="d-md-block">Web(RWD)</span></li>
+                </ul>
             </div>
-            <div class="container txt-content">
-                <h3 class="subtitle-font">00. Sumnary 概述</h3>
-                <p>這是一個Side project，個人創作非商用的創作網站，意在練習建構從無到有的過程，透過練習來增加經驗值與鍛鍊思考路徑，從網站規劃、UI設計、切版、上線全部一條龍包辦。</p>
-                <a href="https://fm0fm0.github.io/carolsiya/index.html" title="前往網站">前往網站 →</a>
-                <h3 class="subtitle-font">01. Preliminary plan 初步規劃</h3>
-                <ul class="list-style">
+        </section>
+        <!-- project-intro -->
+        <article class="article-wrap">
+            <div class="max-container-lg summary-box">
+                <h2 class="fs-5 text-primary mb-3 mb-lg-4">專案背景</h2>
+                <p class="pb-3 pb-lg-3">這是一個Side project，個人創作非商用的創作網站，意在練習建構從無到有的過程，透過練習來增加經驗值與鍛鍊思考路徑，從網站規劃、UI設計、切版、上線全部一條龍包辦。</p>
+            </div>
+            <div class="max-container-md">
+                <h2 class="article-title fs-3 text-primary text-center mb-5"><span>專案目標</span></h2>
+                <ol class="list-style">
                     <li>需擬定一個主題，這個主題得要好研究資料又好找素材。</li>
                     <li>想嘗試設計不那麼中規中矩的layout看自己是否真的能切版成功。</li>
-                </ul>
+                </ol>
             </div>
-        </section>
-        <section class="wrap">
             <div class="banner-content">
                 <div class="container">
-                    <img src="images/project/accessories/01_webImg_lg.png" alt="電腦版首頁" title="電腦版首頁" class="banner-img">
-                    <img src="images/project/accessories/01_webImg_sm.png" alt="手機版首頁" title="手機版首頁" class="banner-img">
+                    <picture>
+                        <source srcset="images/project/accessories/01_webImg_lg.png" media="(max-width: 480px)">
+                        <source srcset="images/project/accessories/01_webImg_lg.png" media="(min-width: 481px)">
+                        <img class="img-fluid" src="images/project/accessories/01_webImg_lg.png" alt="電腦版首頁">
+                    </picture>
+                    <picture>
+                        <source srcset="images/project/accessories/01_webImg_sm.png" media="(max-width: 480px)">
+                        <source srcset="images/project/accessories/01_webImg_sm.png" media="(min-width: 481px)">
+                        <img class="img-fluid" src="images/project/accessories/01_webImg_sm.png" alt="手機版首頁">
+                    </picture>
                 </div>
             </div>
-            <div class="container txt-content">
-                <h3 class="subtitle-font">02. Pain Point 痛點分析</h3>
-                <ul class="list-style">
-                    <li>該如何定下網站類型及主題風格？</li>
-                    <li>一般專案皆有團隊做前置作業後續在按照規劃進行作業，該如何自己從無到有開始一項專案呢？</li>
-                </ul>
+            <div class="max-container-md">
+                <div class="section-wrap">
+                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>痛點分析</span></h2>
+                    <ol class="list-style">
+                        <li>該如何定下網站類型及主題風格？</li>
+                        <li>一般專案皆有團隊做前置作業後續在按照規劃進行作業，該如何自己從無到有開始一項專案呢？</li>
+                    </ol>
+                </div>
+                <div class="section-wrap">
+                    <h2 class="article-title fs-3 text-primary text-center mb-5"><span>解決方案</span></h2>
+                    <ol class="list-style">
+                        <li>從自身愛好著手發想，決定想做自己熟悉有興趣且圖片素材好搜集的主題：飾品。想做出帶有浪漫文藝氣質、富有詩意的氛圍感。</li>
+                        <li>想給自己一個稍具難度的類型，於是選定購物型網站，內容涵蓋產品介紹、會員註冊登入、購物車流程，實用度也高，因為沒有團隊做前置規劃，於是將曾經有過規劃購物型網站的經驗整合運用其中，並大量閱覽各大購物型網站、電商平台網站，研究其中的架構組成、購物流程與圖文細節，做出基本網站架構。</li>
+                    </ol>
+                </div>
             </div>
-            <div class="container txt-content">
-                <h3 class="subtitle-font">03. Solution 解決方案</h3>
-                <ul class="list-style">
-                    <li>從自身愛好著手發想，決定想做自己熟悉有興趣且圖片素材好搜集的主題：飾品。想做出帶有浪漫文藝氣質、富有詩意的氛圍感。</li>
-                    <li>想給自己一個稍具難度的類型，於是選定購物型網站，內容涵蓋產品介紹、會員註冊登入、購物車流程，實用度也高，因為沒有團隊做前置規劃，於是將曾經有過規劃購物型網站的經驗整合運用其中，並大量閱覽各大購物型網站、電商平台網站，研究其中的架構組成、購物流程與圖文細節，做出基本網站架構。</li>
-                </ul>
-            </div>
-        </section>
-        <section class="wrap">
-            <div class="banner-content">
+            <div class="banner-content py-5">
+                <h2 class="article-title fs-3 text-primary text-center mb-5"><span>資訊架構</span></h2>
                 <div class="container">
-                    <img src="images/project/accessories/01_siteMap.png" alt="site map" title="site map" class="banner-img">
+                    <picture>
+                        <source srcset="images/project/accessories/01_siteMap.png" media="(max-width: 480px)">
+                        <source srcset="images/project/accessories/01_siteMap.png" media="(min-width: 481px)">
+                        <img class="img-fluid" src="images/project/accessories/01_siteMap.png" alt="functional-map">
+                    </picture>
                 </div>
             </div>
-        </section>
-        <section class="wrap">
-            <div class="container txt-content">
-                <h3 class="subtitle-font">04. Design Systerm 設計系統</h3>
+            <div class="section-wrap">
+                <h2 class="article-title fs-3 text-primary text-center mb-5"><span>設計系統</span></h2>
                 <p>設定主題色彩並自定義 Bootstrap 的 theme color 搭配使用。</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <img src="images/project/accessories/01_color_text.png" alt="標準色/標準字/按鈕設定" title="標準色/標準字/按鈕設定" class="box-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <!-- <picture>
+                                <source srcset="images/project/km/03_color_text_sm.png" media="(max-width: 480px)">
+                                <source srcset="images/project/km/03_color_text_lg.png" media="(min-width: 481px)">
+                                <img class="img-fluid" src="images/project/km/03_color_text_sm.png" alt="標準色/標準字/按鈕設定">
+                            </picture> -->
+                            <img src="images/project/accessories/01_color_text.png" alt="標準色/標準字/按鈕設定" title="標準色/標準字/按鈕設定" class="box-img">
+                        </div>
+                        <div class="col-12 col-md-4 box-txt-content">
+                            <div class="box-txt">
+                                <h4>標準色 / 標準字 / 按鈕</h4>
+                                <p>大面積使用白色與粉色為基調，並使用半透效果，輔助色為深灰色，創造出一種朦朧氛圍，標準文字使用明體增添文藝感。</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4 box-txt-content">
-                        <div class="box-txt">
-                            <h4>標準色 / 標準字 / 按鈕</h4>
-                            <p>大面積使用白色與粉色為基調，並使用半透效果，輔助色為深灰色，創造出一種朦朧氛圍，標準文字使用明體增添文藝感。</p>
+                    <div class="row">
+                        <div class="col-12 col-md-8 order-md-2">
+                            <img src="images/project/accessories/01_icon.png" alt="標題/插圖" title="標題/插圖" class="box-img">
+                        </div>
+                        <div class="col-12 col-md-4 box-txt-content">
+                            <div class="box-txt">
+                                <h4>標題 / 插圖</h4>
+                                <p>使用草寫作為標題，增加浪漫詩意氛圍，半透粉色系疊加於圖片上，更添一抹朦朧，八角形的裝飾線條俐落，帶有一點簡約又古典的味道。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-8 order-md-2">
-                        <img src="images/project/accessories/01_icon.png" alt="標題/插圖" title="標題/插圖" class="box-img">
-                    </div>
-                    <div class="col-12 col-md-4 box-txt-content">
-                        <div class="box-txt">
-                            <h4>標題 / 插圖</h4>
-                            <p>使用草寫作為標題，增加浪漫詩意氛圍，半透粉色系疊加於圖片上，更添一抹朦朧，八角形的裝飾線條俐落，帶有一點簡約又古典的味道。</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-        <section class="wrap">
-            <div class="container txt-content">
-                <h3 class="subtitle-font">05. 成果展示</h3>
-            </div>
-            <div class="banner-content">
+            <div class="section-wrap">
+                <h2 class="article-title fs-3 text-primary text-center mb-5"><span>成果展示</span></h2>
                 <div class="container">
                     <img src="images/project/accessories/01_page1-1.png" alt="成果展示首頁" title="成果展示首頁" class="banner-img">
                     <img src="images/project/accessories/01_page1-2.png" alt="成果展示首頁" title="成果展示首頁" class="banner-img">
@@ -156,74 +186,60 @@
                     <img src="images/project/accessories/01_page2-3.png" alt="成果展示子頁" title="成果展示子頁" class="banner-img">
                 </div>
             </div>
-        </section>
-        <section class="wrap">
-            <div class="container txt-content">
-                <h3 class="subtitle-font">05. The Outcom 結論</h3>
-                <p>當初光是想要做什麼主題就傷透了腦筋。從無到有的過程，自行規劃網站架構及定義文案內容、自選圖文素材及編修
+            <div class="container">
+                <p class="mx-auto">當初光是想要做什麼主題就傷透了腦筋。從無到有的過程，自行規劃網站架構及定義文案內容、自選圖文素材及編修
                     選定創作購物型網站是因為對於靜態網站來說，除了經常會在購物網站亦是熟悉的題材，是參考資料多、比較好研究且較有挑戰性，其中需要思考的細節頗多，包含購物車流程、會員登入/註冊，將使用者購物時的情境感帶入，思考版位的安排，研究各大購物型網站的版面呈現，在RWD時如何佈局，購物車流程怎麼樣規劃最順暢，這完整的過程經驗過後讓我更加熟悉且有成就感，是我自己很喜歡的作品。</p>
             </div>
-        </section>
-        <div class="btn-group d-flex justufy-content-center container txt-content">
-            <a href="index.html#gallery" class="btn btn-outline-primary">觀看其他作品 →</a>
-        </div>
-        <footer class="bg-light py-5">
-            <div class="container">
-                <div class="row flex-column flex-md-row">
-                    <div class="col d-md-flex">
-                        <div>
-                            <img src="images/index/avatar.png" class="rounded-circle mr-1" style="width:50px;" alt="大頭照" title="It's Rainie">
-                        </div>
-                        <p>
-                            Hi, 我是王雨軒 Rainie<br>
-                            謝謝您看完這份履歷<br>
-                            歡迎與我聯繫<a href="mailto:rainiewang70@gmail.com" target="_blank"> rainiewang70@gmail.com</a>
-                        </p>
-                    </div>
-                    <div class="col d-md-flex align-items-md-end justify-content-md-end">
-                        <ul class="list-unstyled d-flex">
-                            <li><a href="https://github.com/fm0fm0" target="_blank"><i
-                                        class="fab fa-github fa-2x mr-1"></i></a></li>
-                            <!-- <li><a href="https://medium.com/@minmaxcat11" target="_blank"><i
-                                        class="fab fa-medium fa-2x mr-1"></i></a></li> -->
-                            <li><a href="https://rainiewang.weebly.com/" target="_blank"><i
-                                        class="fab fa-weebly fa-2x mr-1"></i></a></li>
-                        </ul>
-                        <p class="">copyright © Rainie Wang</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </article>
     </div>
-
-
-    <a href="" class="gotop" id="gotop" title="回頂部"></a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/all.js"></script>
+    <!-- Recommend -->
+    <section class="container-fluid px-0 recommend-group">
+        <div class="row g-0">
+            <div class="col item">
+                <a class="ratio ratio-5x3 d-block" href="page-tnli.html"><img src="images/index/cover-01.jpg" class="img-fluid object-fit-cover" alt="媒體新聞網站 Redesign"></a>
+            </div>
+            <div class="col item">
+                <a class="ratio ratio-5x3 d-block" href="page-inkmagine.html"><img src="images/index/cover-02.jpg" class="img-fluid object-fit-cover" alt="SaaS 服務介面 Redesign"></a>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col item">
+                <a class="ratio ratio-5x3 d-block" href="page-election-game.html"><img src="images/index/cover-03.jpg" class="img-fluid object-fit-cover" alt="政見配對遊戲"></a>
+            </div>
+            <div class="col item">
+                <a class="ratio ratio-5x3 d-block" href="page-semiconductor.html"><img src="images/index/cover-04.jpg" class="img-fluid object-fit-cover" alt="專題網站"></a>
+            </div>
+            <div class="col item">
+                <a class="ratio ratio-5x3 d-block" href="page-2020-km-design-award.html"><img src="images/index/cover-05.jpg" class="img-fluid object-fit-cover" alt="徵件活動網站"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer py-5">
+        <div class="container">
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
+                <li><a class="text-decoration-none" href="mailto:rainiewang70@gmail.com" aria-label="e-mail" title="e-mail"><i class="fas fa-envelope fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rainie-wang-357861ba/" title="linkedin"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                <li>copyright 2023 © Rainie Wang</li>
+            </ul>
+        </div>
+    </footer>
+    <button class="gotop" id="gotop" title="回頂部">
+        <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0.5 640.5 40 40" enable-background="new 0.5 640.5 40 40" xml:space="preserve">
+            <path fill="#BB9974" d="M20.5,640.5c-11.027,0-20,8.973-20,20s8.973,20,20,20s20-8.973,20-20S31.527,640.5,20.5,640.5z
+            M20.5,678.833c-10.109,0-18.333-8.224-18.333-18.333s8.224-18.333,18.333-18.333c10.109,0,18.333,8.224,18.333,18.333
+            S30.609,678.833,20.5,678.833z" />
+            <g>
+                <path fill="#BB9974" d="M30.461,665.423c-0.256,0-0.512-0.098-0.707-0.293l-9.254-9.255l-9.254,9.255
+                c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414l9.961-9.962c0.375-0.375,1.039-0.375,1.414,0l9.961,9.962
+                c0.391,0.391,0.391,1.023,0,1.414C30.973,665.325,30.717,665.423,30.461,665.423z" />
+            </g>
+        </svg>
+    </button>
+    <!-- js -->
+    <script defer src="js/jquery-3.4.1.min.js"></script>
+    <script defer src="js/wow.min.js"></script>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/all.js"></script>
 </body>
 
 </html>
